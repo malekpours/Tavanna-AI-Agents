@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ماژول ۲ — چطور درخواست خوب بنویسیم؟</title>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body data-mod="2" data-title="چطور درخواست خوب بنویسیم؟">
+<div id="progress"></div>
+<main class="deck">
+
+<!-- ۱: جلد -->
+<section class="slide cover" data-notes="خوش‌آمد بگویید و ماژول ۱ را به یاد بیاورید. بپرسید: تا حالا شده از دستیار هوش مصنوعی جواب کلی و بی‌فایده بگیرید؟ در چت چند نمونه بنویسند. تأکید کنید در همه‌ی تمرین‌ها فقط متن عمومی یا ساختگی به کار می‌رود.">
+<div class="inner">
+  <div class="hero">✍️</div>
+  <span class="kicker">ماژول ۲ از ۸</span>
+  <h1>چطور درخواست خوب بنویسیم؟<span class="en-sub">How to Write a Good Request (Prompting)</span></h1>
+  <p class="sub">با چند جزئیات روشن، از جواب مبهم به یک پیش‌نویس قابل‌بررسی برس.</p>
+  <div class="chips"><span class="chip acc">⏱ حدود ۱۱۰ دقیقه</span><span class="chip">🛠️ بدون نیاز به کدنویسی</span><span class="chip">✍️ همراه با تمرین</span><span class="chip">🔒 فقط با داده‌ی عمومی یا ساختگی</span></div>
+  <p class="small mt">پیش‌نیاز: ماژول ۱ · برای رفتن به اسلاید بعد: فلش چپ یا دکمه‌ی «بعدی»</p>
+</div>
+</section>
+
+<!-- ۲: هدف‌ها -->
+<section class="slide" data-notes="هدف‌ها را بخوانید و از شرکت‌کنندگان بخواهید در چت بنویسند کدام برایشان مهم‌تر است.">
+<div class="inner">
+  <span class="kicker">🎯 مقصد</span>
+  <h2>آخر این ماژول می‌توانی…<span class="en-sub">By the End of This Module, You Can…</span></h2>
+  <div class="g3">
+    <div class="card center step-in"><span class="ic">🔍</span><h3>ابهام را پیدا کنی<span class="en-sub">Spot the Vagueness</span></h3><p>بفهمی چرا درخواست کلی، جواب کلی و گاهی حدس‌زده می‌گیرد.</p></div>
+    <div class="card center acc step-in"><span class="ic">🧱</span><h3>درخواست را بسازی<span class="en-sub">Build the Request</span></h3><p>با پنج بخش ساده، درخواستی روشن و قابل‌آزمایش بنویسی.</p></div>
+    <div class="card center good step-in"><span class="ic">🧪</span><h3>جواب را بیازمایی<span class="en-sub">Test the Answer</span></h3><p>درخواستت را اصلاح کنی و با یک «سؤال تله‌دار» مقاومتش را بسنجی.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ۳: برنامه -->
+<section class="slide" data-notes="مجموع زمان‌ها ۱۱۰ دقیقه است. اگر عقب افتادید، از تکنیک‌های کمکی کوتاه کنید؛ تمرین‌ها را حذف نکنید.">
+<div class="inner">
+  <span class="kicker">⏱ برنامه‌ی امروز</span>
+  <h2>با هم این مسیر را می‌رویم<span class="en-sub">Today’s Agenda</span></h2>
+  <table class="tbl">
+    <tr><th>بخش <span class="en">Section</span></th><th>چه می‌کنیم؟ <span class="en">Activity</span></th><th>زمان <span class="en">Time</span></th></tr>
+    <tr><td>ورود و مرور<br><span class="en">Welcome &amp; Recap</span></td><td>مرور ماژول ۱ و پرسش آغازین</td><td>۸ دقیقه</td></tr>
+    <tr><td>از مبهم تا روشن<br><span class="en">From Vague to Clear</span></td><td>داستان سارا و دلیل جواب‌های کلی</td><td>۲۰ دقیقه</td></tr>
+    <tr><td>اجزای درخواست خوب<br><span class="en">Parts of a Good Request</span></td><td>پنج بخش، یک نمونه‌ی کامل و چرخه‌ی اصلاح</td><td>۲۸ دقیقه</td></tr>
+    <tr><td>تکنیک‌های کمکی<br><span class="en">Helpful Techniques</span></td><td>گام‌به‌گام، نمونه، منبع، پرسش از دستیار</td><td>۲۲ دقیقه</td></tr>
+    <tr><td>نمایش و تمرین<br><span class="en">Demo &amp; Practice</span></td><td>نمایش مدرس و دو تمرین</td><td>۲۴ دقیقه</td></tr>
+    <tr><td>جمع‌بندی<br><span class="en">Wrap-up</span></td><td>چک‌لیست، آزمونک و تکلیف</td><td>۸ دقیقه</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۴: مرور -->
+<section class="slide" data-notes="حدود ۵ دقیقه. از هر کارت یک مثال بخواهید. ماژول ۱ را به این ماژول وصل کنید: چون پاسخ روان لزوماً درست نیست، باید درخواست را طوری بنویسیم که بررسی‌اش آسان شود.">
+<div class="inner">
+  <span class="kicker">🔁 مرور</span>
+  <h2>از ماژول ۱ چه چیزی با خودت آوردی؟<span class="en-sub">Recap of Module 1</span></h2>
+  <div class="g3">
+    <div class="card center step-in"><span class="ic">🤖</span><h3>ایجنت<span class="en-sub">Agent</span></h3><p>هدف و چند گام دارد و گاهی ابزار به کار می‌برد.</p></div>
+    <div class="card center acc step-in"><span class="ic">🧍</span><h3>تأیید انسان<span class="en-sub">Human Approval</span></h3><p>پیش از ارسال یا انتشار، تصمیم نهایی با توست.</p></div>
+    <div class="card center warn step-in"><span class="ic">🌫️</span><h3>توهم<span class="en-sub">Hallucination</span></h3><p>پاسخ روان لزوماً درست نیست؛ ادعا را با منبع بسنج.</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 پل به امروز:</span> بخشی از توهم از درخواست مبهم می‌آید. امروز یاد می‌گیریم چطور آن را کم کنیم.</div>
+</div>
+</section>
+
+<!-- ۵: داستان -->
+<section class="slide" data-notes="دو گفت‌وگو را کنار هم بخوانید. به جزئیات ساختگی در پاسخ اول اشاره کنید: ساعت، مکان و ظرفیت را کسی نگفته بود. سؤال: سارا اگر این متن را بفرستد چه می‌شود؟">
+<div class="inner">
+  <span class="kicker">📖 ادامه‌ی داستان سارا</span>
+  <h2>یک درخواست، دو نتیجه<span class="en-sub">One Request, Two Outcomes</span></h2>
+  <div class="g2">
+    <div class="chat step-in">
+      <div class="ttl">❌ درخواست مبهم <span class="en">Vague</span></div>
+      <div class="msg user"><span class="who">سارا</span>یک اطلاعیه برای رویداد محله بنویس.</div>
+      <div class="msg bot bad"><span class="who">دستیار</span>رویداد بزرگ محله‌ی ما جمعه ساعت ۱۸ در سالن مرکزی برگزار می‌شود. ورود رایگان و ظرفیت ۲۰۰ نفر است…</div>
+    </div>
+    <div class="chat step-in">
+      <div class="ttl">✅ درخواست روشن <span class="en">Clear</span></div>
+      <div class="msg user"><span class="who">سارا</span>پیش‌نویس ۱۰۰ کلمه‌ای برای «جشن کتاب» بنویس؛ فقط از اطلاعاتی که دادم استفاده کن و جاهای ناموجود را [ذکر نشده] بنویس.</div>
+      <div class="msg bot good"><span class="who">دستیار</span>پیش‌نویس آماده است. ظرفیت و شماره‌ی تماس [ذکر نشده] ماند تا خودت کامل کنی.</div>
+    </div>
+  </div>
+  <div class="callout warn step-in"><span class="lbl">🔎 دقت کن:</span> در پاسخ اول، ساعت، مکان و ظرفیت را کسی نگفته بود؛ دستیار برای پر کردن جاهای خالی آن‌ها را ساخت. همه‌ی این جزئیات ساختگی‌اند.</div>
+</div>
+</section>
+
+<!-- ۶: چرا حدس می‌زند -->
+<section class="slide" data-notes="مثال تکمیل خودکار را از ماژول ۱ یادآوری کنید. عددها فقط برای توضیح‌اند و از هیچ مدل واقعی نیامده‌اند. نتیجه: وقتی درخواست مبهم است، چند ادامه‌ی محتمل وجود دارد و مدل یکی را انتخاب می‌کند.">
+<div class="inner">
+  <span class="kicker">🎲 پشت صحنه</span>
+  <h2>چرا درخواست مبهم، حدس می‌گیرد؟<span class="en-sub">Why Does a Vague Request Get Guesses?</span></h2>
+  <div class="flow">
+    <div class="node on step-in"><span class="ic">📝</span><b>ورودی</b><small class="en">Input</small><small>«امروز هوا خیلی …»</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">🎲</span><b>گزینه‌ها</b><small class="en">Candidates</small><small>سرد؟ گرم؟ خوب؟</small></div>
+    <div class="arr">←</div>
+    <div class="node warn step-in"><span class="ic">✅</span><b>انتخاب</b><small class="en">Pick</small><small>محتمل‌ترین ادامه</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">🔁</span><b>تکرار</b><small class="en">Repeat</small><small>واژه به واژه</small></div>
+  </div>
+  <p class="center small">(مثال فرضی برای فهم ایده؛ عددها و گزینه‌ها از مدل خاصی نیست.)</p>
+  <div class="callout tip step-in"><span class="lbl">💡 نتیجه:</span> مدل بیشتر «ادامه‌ی طبیعی» را می‌سازد، نه اینکه حتماً حقیقت را جست‌وجو کند. هرچه درخواست جزئیات بیشتری بدهد، گزینه‌های حدس کمتر می‌شود.</div>
+</div>
+</section>
+
+<!-- ۷: جاهای خالی -->
+<section class="slide" data-notes="هر کارت یک «جای خالی» است. از شرکت‌کنندگان بخواهید برای درخواست «یک اطلاعیه بنویس» بگویند کدام جای خالی را دستیار پر کرد.">
+<div class="inner">
+  <span class="kicker">🕳️ ابهام</span>
+  <h2>ابهام یعنی جای خالی<span class="en-sub">Vagueness = Blanks the Model Fills</span></h2>
+  <div class="g4">
+    <div class="card center step-in"><span class="ic">👥</span><h3>مخاطب<span class="en-sub">Audience</span></h3><p>برای چه کسی؟ همسایه‌ها، همکاران، مدیر؟</p></div>
+    <div class="card center acc step-in"><span class="ic">🎯</span><h3>هدف<span class="en-sub">Goal</span></h3><p>اطلاع‌رسانی، دعوت یا یادآوری؟</p></div>
+    <div class="card center good step-in"><span class="ic">📄</span><h3>اطلاعات منبع<span class="en-sub">Source Facts</span></h3><p>چه زمان، کجا، چه شرایطی؟</p></div>
+    <div class="card center warn step-in"><span class="ic">📋</span><h3>شکل خروجی<span class="en-sub">Format</span></h3><p>چند کلمه؟ فهرست یا پاراگراف؟</p></div>
+  </div>
+  <div class="callout step-in"><span class="lbl">🧩 قاعده:</span> هر جای خالی را خودت پر نکنی، دستیار با حدس پر می‌کند.</div>
+</div>
+</section>
+
+<!-- ۸: فرمول -->
+<section class="slide" data-notes="جدول را کامل بخوانید. این قالب یک راهنماست، نه قانون ثابت؛ در کار ساده لازم نیست همه‌ی پنج بخش را بنویسید. چند ثانیه بدهید همه ردیف‌ها را ببینند.">
+<div class="inner">
+  <span class="kicker">🧪 فرمول اصلی</span>
+  <h2>پنج بخش یک درخواست خوب<span class="en-sub">Five Parts of a Good Request</span></h2>
+  <table class="tbl">
+    <tr><th>بخش</th><th>چه پرسشی را جواب می‌دهد؟</th><th>نمونه</th></tr>
+    <tr><td>۱ · نقش<br><span class="en">Role</span></td><td>دستیار چه کسی باشد؟</td><td>«دستیار نوشتن اطلاعیه‌های عمومی»</td></tr>
+    <tr><td>۲ · زمینه<br><span class="en">Context</span></td><td>برای چه کسی و با چه اطلاعاتی؟</td><td>«مخاطب: ساکنان محله؛ اطلاعات رویداد…»</td></tr>
+    <tr><td>۳ · مأموریت<br><span class="en">Task</span></td><td>دقیقاً چه کاری انجام شود؟</td><td>«پیش‌نویس ۱۰۰ کلمه‌ای بنویس.»</td></tr>
+    <tr><td>۴ · قیدها<br><span class="en">Constraints</span></td><td>چه نکند و اگر نبود چه کند؟</td><td>«چیزی حدس نزن؛ [ذکر نشده] بنویس.»</td></tr>
+    <tr><td>۵ · قالب<br><span class="en">Format</span></td><td>خروجی چه شکلی باشد؟</td><td>«عنوان + یک پاراگراف + یک خط دعوت»</td></tr>
+  </table>
+  <div class="callout tip"><span class="lbl">🧠 برای به‌خاطر سپردن:</span> نقش · زمینه · مأموریت · قیدها · قالب <span class="en">(Role · Context · Task · Constraints · Format)</span></div>
+</div>
+</section>
+
+<!-- ۹: نقش و زمینه -->
+<section class="slide" data-notes="نقش را زیاد پرزرق‌وبرق نکنید؛ هدف آن است که لحن و دامنه‌ی کار روشن شود. زمینه مهم‌تر است: مخاطب و هدف.">
+<div class="inner">
+  <span class="kicker">🎭 بخش‌های ۱ و ۲</span>
+  <h2>نقش و زمینه<span class="en-sub">Role &amp; Context</span></h2>
+  <div class="g2">
+    <div class="card step-in"><h3>🎭 نقش<span class="en-sub">Role</span></h3><p>❌ «تو یک دستیاری.»</p><p>✅ «تو دستیار نوشتن اطلاعیه‌های عمومی برای رویدادهای محله هستی.»</p><p class="small">نقش، لحن و دامنه‌ی کار را روشن می‌کند.</p></div>
+    <div class="card acc step-in"><h3>🌍 زمینه<span class="en-sub">Context</span></h3><p>❌ «برای مردم بنویس.»</p><p>✅ «مخاطب ساکنان محله‌اند؛ تجربه‌ی فنی متفاوتی دارند. هدف دعوت به یک رویداد رایگان است.»</p><p class="small">زمینه یعنی مخاطب، هدف و اطلاعاتی که دستیار باید از آن‌ها استفاده کند.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ۱۰: مأموریت -->
+<section class="slide" data-notes="فعل را مهم‌ترین واژه‌ی درخواست بدانید. از شرکت‌کنندگان بخواهید یک درخواست مبهم خودشان را با فعل روشن بازنویسی کنند. به «پیش‌نویس» دقت کنید: ارسال را نمی‌خواهیم.">
+<div class="inner">
+  <span class="kicker">🎯 بخش ۳</span>
+  <h2>مأموریت روشن<span class="en-sub">A Clear Task</span></h2>
+  <table class="tbl">
+    <tr><th>❌ مبهم <span class="en">Vague</span></th><th>✅ روشن <span class="en">Clear</span></th></tr>
+    <tr><td>«درباره‌ی این متن بگو.»</td><td>«سه نکته‌ی اصلی را بنویس و برای هرکدام جمله‌ای از متن نقل کن.»</td></tr>
+    <tr><td>«یک ایمیل بنویس.»</td><td>«پیش‌نویس ایمیلی ۸۰ کلمه‌ای برای همسایه‌ها بنویس.»</td></tr>
+    <tr><td>«این را بهتر کن.»</td><td>«لحن را دوستانه‌تر کن و طول را نصف کن.»</td></tr>
+  </table>
+  <div class="callout warn step-in"><span class="lbl">🛑 دقت:</span> بنویس «پیش‌نویس». ارسال، انتشار و حذف را به عهده‌ی خودت بگذار.</div>
+</div>
+</section>
+
+<!-- ۱۱: قیدها -->
+<section class="slide" data-notes="سه قید را یکی‌یکی نشان دهید. نکته: هم بگویید چه نکند و هم بگویید به‌جایش چه کند؛ فقط «نکن» کافی نیست.">
+<div class="inner">
+  <span class="kicker">🚧 بخش ۴</span>
+  <h2>قیدها: مرز را مشخص کن<span class="en-sub">Constraints</span></h2>
+  <div class="g3">
+    <div class="card center step-in"><span class="ic">📄</span><h3>فقط از منبع<span class="en-sub">Use Only the Source</span></h3><p>«فقط از اطلاعات بالا استفاده کن.»</p></div>
+    <div class="card center warn step-in"><span class="ic">🙅</span><h3>حدس نزن<span class="en-sub">No Guessing</span></h3><p>«عدد، نام، تاریخ یا مکان را از خودت نساز.»</p></div>
+    <div class="card center good step-in"><span class="ic">🏷️</span><h3>اگر نبود، بگو<span class="en-sub">Flag What’s Missing</span></h3><p>«اگر اطلاعاتی نیست، بنویس [ذکر نشده].»</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> فقط «نکن» کافی نیست؛ بگو به‌جایش چه کند. این همان قاعده‌ی ماژول ۱ است: «اگر در منبع نیست، صریح بگو».</div>
+</div>
+</section>
+
+<!-- ۱۲: قالب -->
+<section class="slide" data-notes="قالب خروجی بررسی را آسان می‌کند: جدول برای مقایسه، فهرست شماره‌دار برای گام‌ها، سقف کلمه برای کنترل طول.">
+<div class="inner">
+  <span class="kicker">📋 بخش ۵</span>
+  <h2>قالب: شکل خروجی را بگو<span class="en-sub">Output Format</span></h2>
+  <div class="g2">
+    <div class="card step-in"><h3>📊 جدول<span class="en-sub">Table</span></h3><p>مناسب مقایسه و بررسی: «ادعا، دلیل، جمله‌ی منبع».</p></div>
+    <div class="card acc step-in"><h3>🔢 فهرست شماره‌دار<span class="en-sub">Numbered List</span></h3><p>مناسب گام‌ها و برنامه: «پنج گام، هرکدام یک جمله».</p></div>
+    <div class="card good step-in"><h3>📏 سقف طول<span class="en-sub">Length Limit</span></h3><p>«حداکثر ۱۰۰ کلمه»؛ بدون آن، خروجی ممکن است بی‌دلیل طولانی شود.</p></div>
+    <div class="card warn step-in"><h3>🏷️ برچسب جاهای خالی<span class="en-sub">Placeholders</span></h3><p>«هر جای نامشخص را [ذکر نشده] بنویس تا خودم کامل کنم.»</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ۱۳: نمونه‌ی کامل -->
+<section class="slide" data-notes="پرامپت را با کلیک «کپی» به دستیار بدهید یا روی صفحه نشان دهید. تمام اطلاعات رویداد ساختگی است. پس از دریافت پاسخ، با کلاس بررسی کنید که آیا چیزی خارج از اطلاعات داده‌شده آمده است.">
+<div class="inner">
+  <span class="kicker">📝 نمونه‌ی کامل</span>
+  <h2>یک درخواست پنج‌بخشی آماده<span class="en-sub">A Complete Five-Part Prompt</span></h2>
+  <div class="prompt good" data-label="درخواست نمونه · رویداد ساختگی"><button type="button" class="copy">کپی</button><div class="pt"><b>نقش:</b> تو دستیار نوشتن اطلاعیه‌های عمومی برای رویدادهای محله هستی.
+<b>زمینه:</b> مخاطب ساکنان محله‌اند. رویداد «جشن کتاب محله‌ی نمونه» (ساختگی) است؛ جمعه، ساعت ۱۰ تا ۱۳، پارک نمونه، ورود رایگان.
+<b>مأموریت:</b> یک پیش‌نویس اطلاعیه‌ی حدود ۱۰۰ کلمه‌ای بنویس.
+<b>قیدها:</b> فقط از اطلاعات بالا استفاده کن. ظرفیت، قیمت، نام مهمان و شماره‌ی تماس را حدس نزن؛ جاهای نامشخص را [ذکر نشده] بنویس. چیزی ارسال یا منتشر نکن.
+<b>قالب:</b> عنوان کوتاه + یک پاراگراف + یک خط دعوت به شرکت.</div></div>
+  <div class="callout tip step-in"><span class="lbl">🔎 بعد از دریافت پاسخ:</span> آیا چیزی خارج از اطلاعات بالا آمده؟ آیا هر جای نامشخص برچسب خورده؟</div>
+</div>
+</section>
+
+<!-- ۱۴: چرخه‌ی اصلاح -->
+<section class="slide" data-notes="درخواست اول معمولاً کامل نیست و مشکل نیست. هر بار فقط یک چیز را عوض کنید تا بفهمید کدام تغییر اثر داشت.">
+<div class="inner">
+  <span class="kicker">🔁 اصلاح</span>
+  <h2>درخواست خوب، یک‌باره ساخته نمی‌شود<span class="en-sub">Iterate: Draft, Run, Check, Refine</span></h2>
+  <div class="flow">
+    <div class="node on step-in"><span class="ic">✍️</span><b>بنویس</b><small class="en">Draft</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">▶️</span><b>اجرا کن</b><small class="en">Run</small></div>
+    <div class="arr">←</div>
+    <div class="node warn step-in"><span class="ic">🔎</span><b>بسنج</b><small class="en">Check</small></div>
+    <div class="arr">←</div>
+    <div class="node ok step-in"><span class="ic">🔧</span><b>اصلاح کن</b><small class="en">Refine</small></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 قاعده:</span> هر بار یک چیز را تغییر بده (مثلاً یک قید)، تا بفهمی کدام تغییر اثر داشت.</div>
+</div>
+</section>
+
+<!-- ۱۵: تکنیک ۱ -->
+<section class="slide" data-notes="مثال را با هم حساب کنید: ۴۵ + ۶۰ + ۳۰ + ۳۰ = ۱۶۵ و ۱۸۰ − ۱۶۵ = ۱۵. تأکید کنید که گام‌به‌گام نوشتن بررسی را آسان می‌کند، اما درستی را تضمین نمی‌کند؛ حساب را خودتان هم بررسی کنید.">
+<div class="inner">
+  <span class="kicker">🪜 تکنیک ۱</span>
+  <h2>گام‌به‌گام بخواه<span class="en-sub">Ask for Step-by-Step Reasoning</span></h2>
+  <p>مسئله: چهار فعالیت ۴۵، ۶۰، ۳۰ و ۳۰ دقیقه‌ای. آیا در ۳ ساعت جا می‌شوند؟</p>
+  <div class="g2">
+    <div class="chat step-in"><div class="ttl">❌ پرسش مستقیم</div><div class="msg user">این فعالیت‌ها در ۳ ساعت جا می‌شوند؟</div><div class="msg bot bad">بله.</div></div>
+    <div class="chat step-in"><div class="ttl">✅ گام‌به‌گام</div><div class="msg user">گام‌به‌گام مجموع زمان را حساب کن و با ۱۸۰ دقیقه مقایسه کن.</div><div class="msg bot good">۴۵+۶۰+۳۰+۳۰ = ۱۶۵ دقیقه. ۱۸۰−۱۶۵ = ۱۵ دقیقه باقی می‌ماند؛ پس جا می‌شوند.</div></div>
+  </div>
+  <div class="callout warn step-in"><span class="lbl">⚠️ توجه:</span> گام‌ها بررسی را آسان می‌کنند ولی درستی را تضمین نمی‌کنند؛ حساب را خودت هم کنترل کن.</div>
+</div>
+</section>
+
+<!-- ۱۶: تکنیک ۲ -->
+<section class="slide" data-notes="یک یا دو نمونه معمولاً کافی است. نمونه باید با قالب و لحن دلخواه یکی باشد. نمونه‌ی ساختگی و بی‌خطر انتخاب کنید.">
+<div class="inner">
+  <span class="kicker">🧩 تکنیک ۲</span>
+  <h2>یک نمونه نشان بده<span class="en-sub">Show an Example (Few-shot)</span></h2>
+  <div class="prompt good" data-label="درخواست همراه با نمونه"><button type="button" class="copy">کپی</button><div class="pt">جمله‌ها را با لحن دوستانه بازنویسی کن.
+نمونه:
+ورودی: «حضور در جلسه الزامی است.»
+خروجی: «خوشحال می‌شویم در جلسه کنارمان باشی.»
+حالا بازنویسی کن: «ثبت‌نام فقط تا جمعه ممکن است.»</div></div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> نمونه مثل «الگو» عمل می‌کند. یک یا دو نمونه‌ی کوتاه معمولاً کافی است و بهتر است شبیه خروجی دلخواهت باشد.</div>
+</div>
+</section>
+
+<!-- ۱۷: تکنیک ۳ -->
+<section class="slide" data-notes="این همان راه مهار توهم در ماژول ۱ است. جداکننده‌ها کمک می‌کنند دستیار بداند کجا منبع شروع و تمام می‌شود. فقط متن عمومی یا ساختگی بچسبانید.">
+<div class="inner">
+  <span class="kicker">📄 تکنیک ۳</span>
+  <h2>منبع بده و جدایش کن<span class="en-sub">Give the Source and Separate It</span></h2>
+  <div class="prompt good" data-label="قالب پیشنهادی"><button type="button" class="copy">کپی</button><div class="pt">متن منبع میان دو خط --- آمده است. فقط بر پایه‌ی همان پاسخ بده.
+---
+[اینجا فقط متن عمومی یا ساختگی بگذار]
+---
+پرسش: [پرسش خودت]
+اگر پاسخ در متن نیست، بنویس «در متن آمده نیست».</div></div>
+  <div class="callout warn step-in"><span class="lbl">🔒 یادت باشد:</span> متنی را بچسبان که اجازه‌ی انتشارش را داری؛ نام و شماره‌ی افراد واقعی را نگذار.</div>
+</div>
+</section>
+
+<!-- ۱۸: تکنیک ۴ -->
+<section class="slide" data-notes="وقتی کار پیچیده است، به‌جای حدس زدن از دستیار بخواهید ابتدا بپرسد. این هم دقت را بالا می‌برد و هم زمانی برای فکر کردن به شما می‌دهد.">
+<div class="inner">
+  <span class="kicker">❓ تکنیک ۴</span>
+  <h2>بگذار دستیار بپرسد<span class="en-sub">Let the Assistant Ask Clarifying Questions</span></h2>
+  <div class="chat">
+    <div class="msg user"><span class="who">تو</span>می‌خواهم برای یک رویداد محله برنامه بچینم. قبل از شروع، حداکثر سه پرسش بپرس و فرض‌هایت را بنویس.</div>
+    <div class="msg bot"><span class="who">دستیار</span>۱) مخاطبان چه کسانی‌اند؟ ۲) چند ساعت وقت داریم؟ ۳) چه فضایی در دسترس است؟ فرض موقت: ورود رایگان است.</div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> نوشتن «فرض‌هایت را بنویس» <span class="en">(State your assumptions)</span> باعث می‌شود حدس‌ها پنهان نمانند.</div>
+</div>
+</section>
+
+<!-- ۱۹: دستور ثابت -->
+<section class="slide" data-notes="نام و شکل این قابلیت در هر سرویس فرق می‌کند؛ جزئیات را به ماژول ۳ بسپارید. نکته‌ی مهم: چیزی را در دستور ثابت ننویسید که نمی‌خواهید ذخیره شود.">
+<div class="inner">
+  <span class="kicker">🏛️ دو نوع دستور</span>
+  <h2>دستور ثابت و درخواست لحظه‌ای<span class="en-sub">Standing Instructions vs. One-off Requests</span></h2>
+  <div class="g2">
+    <div class="card step-in"><span class="ic">📌</span><h3>دستور ثابت<span class="en-sub">Standing Instructions</span></h3><p>قوانینی که برای همه‌ی گفت‌وگوها یکی است؛ مثل نقش، مرزها و «حدس نزن». در فنی‌ترین شکلش «دستور سیستمی» <span class="en">(System Prompt)</span> نام دارد.</p></div>
+    <div class="card acc step-in"><span class="ic">💬</span><h3>درخواست لحظه‌ای<span class="en-sub">One-off Request</span></h3><p>کاری که همین حالا می‌خواهی؛ مثل «این متن را خلاصه کن». داده‌ها و جزئیات متغیر اینجا می‌آیند.</p></div>
+  </div>
+  <div class="callout warn step-in"><span class="lbl">🔒 یادت باشد:</span> بعضی سرویس‌ها جایی برای دستور ثابت دارند، اما شکل و نگهداری آن فرق می‌کند. اطلاعات حساس را آنجا ننویس.</div>
+</div>
+</section>
+
+<!-- ۲۰: سؤال تله‌دار -->
+<section class="slide" data-notes="این همان گزارش ساختگی کتابخانه از ماژول ۱ است که هیچ درصدی نداشت. سؤال یک فرض غلط دارد. اگر دستیار دلیل بسازد، توهم کرده است. از شرکت‌کنندگان بخواهید فرض غلط را پیدا کنند.">
+<div class="inner">
+  <span class="kicker">🪤 آزمون مقاومت</span>
+  <h2>سؤال تله‌دار<span class="en-sub">The Trap Question (False-Premise Test)</span></h2>
+  <div class="chat">
+    <div class="msg user"><span class="who">تو</span>کتابخانه در گزارش ۲۰۲۵ گفته تعداد اعضا ۳۰ درصد زیاد شده. دلیل این رشد چه بوده؟</div>
+    <div class="msg bot bad"><span class="who">درخواست ضعیف</span>دلیل اصلی افزایش کارگاه‌های رایگان و تبلیغات بوده است… (ساخت دلیل از خودش)</div>
+    <div class="msg bot good"><span class="who">درخواست قوی</span>در متن درصدی ذکر نشده و دلیلی هم برای افزایش نیامده است. فقط نوشته «افزایش داشته».</div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">🔎 سؤال تله‌دار یعنی:</span> پرسشی که یک فرض غلط در آن پنهان است. اگر دستیار فرض را رد کند، درخواستت مقاوم است.</div>
+</div>
+</section>
+
+<!-- ۲۱: حریم خصوصی -->
+<section class="slide" data-notes="این اسلاید زمینه‌ی ماژول ۴ است. به جای نام واقعی از «شرکت‌کننده‌ی الف» استفاده کنید. پیش از چسباندن هر متن، از خودتان بپرسید: اگر این روی تابلوی عمومی باشد مشکلی هست؟">
+<div class="inner">
+  <span class="kicker">🔒 پیش از نوشتن</span>
+  <h2>چه چیزی را در درخواست نگذاریم؟<span class="en-sub">What to Leave Out of a Prompt</span></h2>
+  <div class="g2">
+    <div class="card good step-in"><h3>✅ بگذار<span class="en-sub">Safe to Include</span></h3><ul><li>متن عمومی یا ساختگی</li><li>نام‌های خیالی، مثل «شرکت‌کننده‌ی الف»</li><li>خود نیاز: هدف، مخاطب، قالب</li></ul></div>
+    <div class="card bad step-in"><h3>🛑 نگذار<span class="en-sub">Leave Out</span></h3><ul><li>رمز عبور، کد پیامکی، اطلاعات بانکی</li><li>مشخصات یا پیام‌های خصوصی دیگران</li><li>اطلاعات محرمانه‌ی کار یا سازمان</li></ul></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 روش ساده:</span> پیش از چسباندن متن، نام‌ها و شماره‌ها را با نشانه عوض کن <span class="en">(Redact)</span>. نیازی نیست دستیار آن‌ها را بداند.</div>
+</div>
+</section>
+
+<!-- ۲۲: اشتباه‌های رایج -->
+<section class="slide" data-notes="جدول را با مثال‌های خود شرکت‌کنندگان زنده کنید. اشتباه اول و سوم از همه رایج‌ترند.">
+<div class="inner">
+  <span class="kicker">🧯 اشتباه‌های رایج</span>
+  <h2>کجا گیر می‌کنیم؟<span class="en-sub">Common Mistakes and Fixes</span></h2>
+  <table class="tbl">
+    <tr><th>اشتباه <span class="en">Mistake</span></th><th>نشانه</th><th>راه‌حل <span class="en">Fix</span></th></tr>
+    <tr><td>مبهم نوشتن</td><td>جواب کلی یا پر از حدس</td><td>مخاطب، هدف و قالب را بگو</td></tr>
+    <tr><td>همه‌چیز را در یک پیام ریختن</td><td>بخشی از کار جا می‌ماند</td><td>کار را به چند گام تقسیم کن</td></tr>
+    <tr><td>منبع ندادن</td><td>عدد یا نام ساختگی</td><td>منبع بده و «اگر نبود بگو» بنویس</td></tr>
+    <tr><td>بی‌بررسی پذیرفتن</td><td>لحن مطمئن، شواهد ناکافی</td><td>هر ادعا را با منبع بسنج</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۲۳: نمایش مدرس -->
+<section class="slide" data-notes="حدود ۸ دقیقه. درخواست را در همین جلسه از مبهم تا روشن پیش ببرید و هر نسخه را روی صفحه نشان دهید. اگر اینترنت در دسترس نیست، از پاسخ‌های نمونه‌ی همین ماژول استفاده کنید.">
+<div class="inner">
+  <span class="kicker">👀 ببین</span>
+  <h2>نمایش عملی: از مبهم تا روشن<span class="en-sub">Live Demo: From Vague to Clear</span></h2>
+  <div class="try">
+    <div class="head">🧑‍🏫 نمایش مدرس <span class="en">Instructor Demo</span> <span class="time">۸ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>درخواست مبهم «یک اطلاعیه بنویس» را اجرا کن و جزئیات ساختگی را علامت بزن.</li>
+        <li>زمینه و اطلاعات ساختگی رویداد را اضافه کن و دوباره اجرا کن.</li>
+        <li>قید «حدس نزن؛ [ذکر نشده] بنویس» را بیفزا و تفاوت را ببین.</li>
+        <li>قالب و سقف طول را بگو و نسخه‌ی نهایی را با درخواست اول مقایسه کن.</li>
+      </ol>
+      <div class="callout tip"><span class="lbl">🔎 دنبال چه بگردیم؟</span> هر نسخه چه چیزی را کم یا زیاد کرد؟ کدام قید بیشتر از بقیه اثر داشت؟</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۴: تمرین ۱ -->
+<section class="slide" data-notes="۱۰ دقیقه. در Google Meet از چت یا اتاق‌های جانبی استفاده کنید. هر نفر فقط یک درخواست را بازنویسی کند. اگر اینترنت در دسترس نیست، روی کاغذ بنویسند و جزئیات را مرور کنید.">
+<div class="inner">
+  <span class="kicker">✍️ نوبت تو</span>
+  <h2>تمرین اول: بازنویسی با پنج بخش<span class="en-sub">Exercise 1: Rewrite With the Five Parts</span></h2>
+  <div class="try">
+    <div class="head">👥 تمرین فردی یا دونفره <span class="en">Solo or Pair Exercise</span> <span class="time">۱۰ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>یکی از درخواست‌های ضعیف را انتخاب کن: «یک خلاصه بده.» یا «برای جلسه یک برنامه بنویس.»</li>
+        <li>آن را با پنج بخش بازنویسی کن؛ از اطلاعات ساختگی استفاده کن.</li>
+        <li>اجرا کن و ببین چیزی خارج از اطلاعاتت آمده یا نه.</li>
+        <li>یک قید اضافه کن و دوباره اجرا کن.</li>
+      </ol>
+      <div class="callout warn"><span class="lbl">🔒 یادت باشد:</span> فقط متن عمومی یا ساختگی؛ اطلاعات واقعی و حساس را وارد نکن.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۵: تمرین ۲ -->
+<section class="slide" data-notes="۶ دقیقه، دونفره. هر نفر برای هم‌گروهی یک سؤال تله‌دار می‌سازد. می‌توانند از گزارش ساختگی کتابخانه در ماژول ۱ استفاده کنند. در پایان چند نتیجه را مرور کنید.">
+<div class="inner">
+  <span class="kicker">✍️ نوبت تو</span>
+  <h2>تمرین دوم: سؤال تله‌دار<span class="en-sub">Exercise 2: The Trap Question</span></h2>
+  <div class="try">
+    <div class="head">👥 تمرین دونفره <span class="en">Pair Exercise</span> <span class="time">۶ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>برای متن ساختگی ماژول ۱ (گزارش کتابخانه) سؤالی بساز که یک فرض غلط داشته باشد.</li>
+        <li>سؤال را به هم‌گروهی بده تا به دستیار بدهد.</li>
+        <li>ببین دستیار فرض را رد کرد یا برایش دلیل ساخت.</li>
+        <li>اگر ساخت، یک قید «اگر در منبع نیست، بگو» اضافه کن و دوباره بسنج.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۶: چک‌لیست -->
+<section class="slide" data-notes="روی هر مورد کلیک کنید تا تیک بخورد. اجازه دهید شرکت‌کنندگان این چک‌لیست را برای خودشان کپی کنند و کنار میزشان نگه دارند.">
+<div class="inner">
+  <span class="kicker">✅ پیش از ارسال</span>
+  <h2>چک‌لیست درخواست<span class="en-sub">Prompt Checklist</span></h2>
+  <ul class="check">
+    <li><span>مخاطب و هدف را گفته‌ام. <span class="en">(Audience · Goal)</span></span></li>
+    <li><span>مأموریت با یک فعل روشن نوشته شده است. <span class="en">(Clear task)</span></span></li>
+    <li><span>اطلاعات منبع را داده‌ام و «اگر نبود، بگو» نوشته‌ام. <span class="en">(Source · Flag gaps)</span></span></li>
+    <li><span>قالب و سقف طول مشخص است. <span class="en">(Format · Length)</span></span></li>
+    <li><span>هیچ اطلاعات حساس یا واقعی در متن نیست. <span class="en">(No sensitive data)</span></span></li>
+    <li><span>خروجی را خودم با منبع می‌سنجم و ارسال هم با تأیید من است. <span class="en">(Human review)</span></span></li>
+  </ul>
+</div>
+</section>
+
+<!-- ۲۷: آزمونک -->
+<section class="slide" data-notes="ابتدا فرصت پاسخ بدهید؛ بعد از انتخاب هر گزینه، دلیل را بخوانید و بحث را باز کنید.">
+<div class="inner">
+  <span class="kicker">🧪 خودت را بسنج</span>
+  <h2>سه سؤال سریع<span class="en-sub">Three Quick Questions</span></h2>
+  <div class="g3">
+    <div class="quiz">
+      <div class="q">چرا «یک اطلاعیه بنویس» ممکن است جزئیات ساختگی بدهد؟</div>
+      <button class="opt" data-correct="true" data-why="جاهای خالی مثل زمان و مکان را دستیار با حدس پر می‌کند.">چون جاهای خالی درخواست را با حدس پر می‌کند</button>
+      <button class="opt" data-why="دستیار ذاتاً دروغ‌گو نیست؛ مشکل بیشتر در ابهام و نبود منبع است.">چون دستیار عمداً دروغ می‌گوید</button>
+      <button class="opt" data-why="طولانی بودن مشکل اصلی نیست؛ نبود اطلاعات است.">چون درخواست طولانی بوده</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="quiz">
+      <div class="q">کدام قید برای جلوگیری از ساختن اطلاعات بهتر است؟</div>
+      <button class="opt" data-why="این فقط لحن را عوض می‌کند، نه حدس زدن را.">«لحن دوستانه داشته باش.»</button>
+      <button class="opt" data-correct="true" data-why="هم مرز را مشخص می‌کند و هم می‌گوید جاهای نامشخص چه شود.">«حدس نزن؛ اگر در منبع نیست [ذکر نشده] بنویس.»</button>
+      <button class="opt" data-why="سرعت به درستی کمک نمی‌کند.">«سریع جواب بده.»</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="quiz">
+      <div class="q">سؤال تله‌دار چه چیزی را می‌سنجد؟</div>
+      <button class="opt" data-why="این معیار تله‌دار نیست.">اینکه جواب چند کلمه دارد</button>
+      <button class="opt" data-correct="true" data-why="اگر فرض غلط را رد کند، درخواست مقاوم‌تر است.">اینکه دستیار فرض غلط را رد می‌کند یا برایش جواب می‌سازد</button>
+      <button class="opt" data-why="این به لحن مربوط است، نه به فرض غلط.">اینکه دستیار مؤدب است</button>
+      <div class="feedback"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۸: جمع‌بندی -->
+<section class="slide" data-notes="از شرکت‌کنندگان بخواهید یک قید یا تکنیک را که فردا امتحان می‌کنند در چت بنویسند. به ماژول ۳ وصل کنید: وقتی درخواست خوب بنویسیم، کدام ابزار به کار ما می‌آید؟">
+<div class="inner">
+  <span class="kicker">📌 جمع‌بندی</span>
+  <h2>چه یاد گرفتیم؟<span class="en-sub">What Did We Learn?</span></h2>
+  <ul class="keys">
+    <li><span>درخواست مبهم، <b>جای خالی</b> می‌گذارد و دستیار آن را با حدس پر می‌کند. <span class="en">(Vague → Guesses)</span></span></li>
+    <li><span>پنج بخش: <b>نقش · زمینه · مأموریت · قیدها · قالب</b>. <span class="en">(Role · Context · Task · Constraints · Format)</span></span></li>
+    <li><span>درخواست خوب با <b>اجرا، سنجش و اصلاح</b> ساخته می‌شود. <span class="en">(Iterate)</span></span></li>
+    <li><span>گام‌به‌گام، نمونه، منبع و پرسش از دستیار، <b>بررسی را آسان‌تر می‌کنند</b>. <span class="en">(Techniques)</span></span></li>
+    <li><span>با سؤال تله‌دار بیازمای و <b>خروجی را خودت بازبینی کن</b>؛ اطلاعات حساس را وارد نکن. <span class="en">(Trap test · Privacy)</span></span></li>
+  </ul>
+  <div class="next-up"><span>🚀 <b>تکلیف کوتاه</b> <span class="en">(Mini Assignment)</span><b>:</b> یک کار کم‌خطر انتخاب کن و برایش یک درخواست پنج‌بخشی بنویس. با دو سؤال تله‌دار بیازمایش و یک قید اضافه کن. در ماژول ۳ یاد می‌گیریم کدام ابزار به کارمان می‌آید.</span><a class="btn" href="03-abzar.html">ماژول ۳ ←</a></div>
+</div>
+</section>
+
+</main>
+<script src="deck.js"></script>
+</body>
+</html>

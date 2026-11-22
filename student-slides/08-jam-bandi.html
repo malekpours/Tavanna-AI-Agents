@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ماژول ۸ — از یک ایجنت تا یک گردش‌کار</title>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body data-mod="8" data-title="از یک ایجنت تا یک گردش‌کار">
+<div id="progress"></div>
+<main class="deck">
+
+<!-- ۱: جلد -->
+<section class="slide cover">
+<div class="inner">
+  <div class="hero">🚀</div>
+  <span class="kicker">ماژول ۸ از ۸</span>
+  <h1>از یک ایجنت تا یک گردش‌کار<span class="en-sub">From One Agent to a Workflow</span></h1>
+  <p class="sub">آموخته‌ها را به یک پروژه‌ی کوچک، قابل‌آزمایش و زیر نظر انسان تبدیل کن.</p>
+  <div class="chips"><span class="chip acc">⏱ حدود ۱۲۰ دقیقه</span><span class="chip">🛠️ بدون نیاز به کدنویسی</span><span class="chip">✍️ پروژه‌ی پایانی</span><span class="chip">🔒 فقط با داده‌ی عمومی یا ساختگی</span></div>
+  <p class="small mt">پیش‌نیاز: ماژول ۱ تا ۷ · برای رفتن به اسلاید بعد: فلش چپ یا دکمه‌ی «بعدی»</p>
+</div>
+</section>
+
+<!-- ۲: هدف‌ها -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🎯 مقصد</span>
+  <h2>آخر این ماژول می‌توانی…<span class="en-sub">By the End of This Module, You Can…</span></h2>
+  <div class="g3">
+    <div class="card center step-in"><span class="ic">🔗</span><h3>یک گردش‌کار طراحی کنی<span class="en-sub">Design a Workflow</span></h3><p>چند گام کوچک را زنجیر کنی و برای هر گام نقش و مرز بنویسی.</p></div>
+    <div class="card center acc step-in"><span class="ic">🤝</span><h3>چند ایجنت را بسنجی<span class="en-sub">Weigh Multi-agent Setups</span></h3><p>بدانی کی چند ایجنت کمک می‌کند و کی فقط پیچیدگی می‌آورد.</p></div>
+    <div class="card center good step-in"><span class="ic">🛡️</span><h3>پیش از اجرا ممیزی کنی<span class="en-sub">Audit Before You Run</span></h3><p>حریم خصوصی، دسترسی، دقت و نظارت انسانی را بسنجی.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ۳: برنامه -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">⏱ برنامه‌ی امروز</span>
+  <h2>با هم این مسیر را می‌رویم<span class="en-sub">Today’s Agenda</span></h2>
+  <table class="tbl">
+    <tr><th>بخش <span class="en">Section</span></th><th>چه می‌کنیم؟ <span class="en">Activity</span></th><th>زمان <span class="en">Time</span></th></tr>
+    <tr><td>ورود و مرور<br><span class="en">Welcome &amp; Recap</span></td><td>مرور ماژول‌ها و داستان دو گروه</td><td>۸ دقیقه</td></tr>
+    <tr><td>از ایجنت تا گردش‌کار<br><span class="en">From Agent to Workflow</span></td><td>گردش‌کار، سه نمونه‌ی ساده، انتخاب کار اول</td><td>۲۶ دقیقه</td></tr>
+    <tr><td>چند ایجنت و اتوماسیون<br><span class="en">Multi-agent &amp; Automation</span></td><td>الگوها، ایستگاه تأیید، آینده</td><td>۲۴ دقیقه</td></tr>
+    <tr><td>ممیزی و برنامه‌ی ادامه<br><span class="en">Audit &amp; Next Steps</span></td><td>چهار سد، برنامه‌ی ۳۰-۶۰-۹۰ روزه، پنج اصل</td><td>۲۲ دقیقه</td></tr>
+    <tr><td>پروژه‌ی پایانی<br><span class="en">Final Project</span></td><td>نمایش مدرس، طراحی و ممیزی گردش‌کار</td><td>۳۰ دقیقه</td></tr>
+    <tr><td>جمع‌بندی<br><span class="en">Wrap-up</span></td><td>آزمون پایانی و تعهد شخصی</td><td>۱۰ دقیقه</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۴: مرور دوره -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🔁 مرور دوره</span>
+  <h2>هفت ماژول در هفت جمله<span class="en-sub">Seven Modules in Seven Lines</span></h2>
+  <table class="tbl">
+    <tr><th>ماژول</th><th>یک جمله</th></tr>
+    <tr><td>۱ · ایجنت چیست؟<br><span class="en">What Is an Agent?</span></td><td>چند گام و ابزار؛ بازبینی با توست.</td></tr>
+    <tr><td>۲ · درخواست خوب<br><span class="en">Prompting</span></td><td>نقش، زمینه، مأموریت، قیدها، قالب.</td></tr>
+    <tr><td>۳ · انتخاب ابزار<br><span class="en">Choosing Tools</span></td><td>با نیاز، داده و محدودیت بسنج.</td></tr>
+    <tr><td>۴ · حریم خصوصی<br><span class="en">Privacy</span></td><td>کمتر بده؛ پاک‌شده بده.</td></tr>
+    <tr><td>۵ · وقتی اشتباه می‌کند<br><span class="en">When It Errs</span></td><td>خطا را بگیر؛ اقدام بیرونی با تأیید.</td></tr>
+    <tr><td>۶ · حساب و دستگاه<br><span class="en">Accounts &amp; Devices</span></td><td>رمز یکتا، لایه‌ی دوم، کمترین دسترسی.</td></tr>
+    <tr><td>۷ · دستیار ساده<br><span class="en">Simple Assistant</span></td><td>یک منبع، یک هدف، ده آزمون.</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۵: داستان -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">📖 یک داستان</span>
+  <h2>دو گروه، سه ماه بعد<span class="en-sub">Two Teams, Three Months Later</span></h2>
+  <div class="g2">
+    <div class="card warn step-in"><h3>🏃 گروه عجول<span class="en-sub">The Rushed Team</span></h3><ul><li>همه‌چیز را با یک ایجنت بزرگ خودکار کرد</li><li>بدون ممیزی و بازبینی منتشر کرد</li><li>با خطا و افشای داده روبه‌رو شد</li><li>پروژه را رها کرد</li></ul></div>
+    <div class="card good step-in"><h3>🐢 گروه گام‌به‌گام<span class="en-sub">The Step-by-step Team</span></h3><ul><li>از کار کوچک و کم‌خطر شروع کرد</li><li>منبع را پاک و دستور را آزمود</li><li>برای هر گام نقش و مرز نوشت</li><li>بازبینی انسانی را حفظ کرد</li></ul></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نتیجه:</span> این یک سناریوی فرضی است. اما درسش واقعی است: برنده کسی نیست که سریع‌تر همه‌چیز را خودکار می‌کند؛ کسی است که هوشمندانه و امن کار می‌کند.</div>
+</div>
+</section>
+
+<!-- ۶: گردش‌کار -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🔗 مفهوم</span>
+  <h2>گردش‌کار چیست؟<span class="en-sub">What Is a Workflow?</span></h2>
+  <div class="g3">
+    <div class="card step-in"><span class="ic">🧱</span><h3>تعریف<span class="en-sub">Definition</span></h3><p>زنجیره‌ای از چند گام که خروجی هر گام ورودی گام بعدی است.</p></div>
+    <div class="card acc step-in"><span class="ic">🎪</span><h3>مثال روزمره<span class="en-sub">Everyday Example</span></h3><p>برنامه‌ریزی رویداد: یافتن زمان ← پیش‌نویس دعوت ← یادآوری ← جمع‌بندی.</p></div>
+    <div class="card good step-in"><span class="ic">🤖</span><h3>با ایجنت<span class="en-sub">With Agents</span></h3><p>هر گام یک دستور یا دستیار جدا؛ و یک انسان در پایان.</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> گردش‌کار یعنی گام‌های کوچک و قابل‌آزمایش، نه یک ایجنت غول‌پیکر.</div>
+</div>
+</section>
+
+<!-- ۷: انتخاب کار اول -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🎯 کار اول</span>
+  <h2>کدام کار برای شروع مناسب است؟<span class="en-sub">Picking a Good First Workflow</span></h2>
+  <table class="tbl">
+    <tr><th>معیار <span class="en">Criterion</span></th><th>یعنی چه؟</th></tr>
+    <tr><td>کوچک<br><span class="en">Small</span></td><td>در چند گام شمرده می‌شود.</td></tr>
+    <tr><td>تکراری<br><span class="en">Repetitive</span></td><td>ارزش ساختن دارد.</td></tr>
+    <tr><td>کم‌خطر<br><span class="en">Low-risk</span></td><td>اگر خطا شد، آسیب بزرگ نمی‌زند.</td></tr>
+    <tr><td>قابل‌آزمایش<br><span class="en">Testable</span></td><td>خروجی را می‌شود با منبع سنجید.</td></tr>
+    <tr><td>با بازبینی انسانی<br><span class="en">Human-reviewed</span></td><td>نقطه‌ی تأیید روشن دارد.</td></tr>
+  </table>
+  <div class="callout warn step-in"><span class="lbl">⚠️ توجه:</span> کار حساس (سلامت، حقوقی، مالی، تصمیم درباره‌ی افراد) برای شروع مناسب نیست.</div>
+</div>
+</section>
+
+<!-- ۸: گردش‌کار ۱: راستی‌آزمایی -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🔍 گردش‌کار ۱</span>
+  <h2>خط لوله‌ی راستی‌آزمایی<span class="en-sub">Fact-checking Pipeline</span></h2>
+  <div class="flow">
+    <div class="node on step-in"><span class="ic">✂️</span><b>جداکردن ادعاها</b><small class="en">Extract claims</small><small>ادعای قابل‌سنجش از نظر.</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">📄</span><b>مقایسه با منبع</b><small class="en">Compare with source</small><small>جمله‌ی پشتیبان را پیدا کن.</small></div>
+    <div class="arr">←</div>
+    <div class="node warn step-in"><span class="ic">🏷️</span><b>برچسب</b><small class="en">Label</small><small>تأیید / رد / کافی نیست.</small></div>
+    <div class="arr">←</div>
+    <div class="node ok step-in"><span class="ic">🧍</span><b>بازبینی انسان</b><small class="en">Human review</small><small>منبع را باز و تأیید کن.</small></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> ایجنت حقیقت را اختراع نمی‌کند؛ کارش مقایسه‌ی شواهد با ادعاست. انسان منبع را باز می‌کند و حکم را می‌دهد.</div>
+</div>
+</section>
+
+<!-- ۹: پرامپت راستی‌آزمایی -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🧾 نمونه</span>
+  <h2>درخواست راستی‌آزمایی روی یک منبع<span class="en-sub">A Fact-checking Prompt on a Given Source</span></h2>
+  <div class="prompt good" data-label="راستی‌آزمایی · منبع ساختگی"><button type="button" class="copy">کپی</button><div class="pt">نقش: تو راستی‌آزمای دقیق و بی‌طرف هستی.
+مأموریت: ادعاهای زیر را فقط با متن منبع بسنج:
+۱) «کتابخانه ۱۲ هزار عضو داشت.» ۲) «اعضا ۳۰ درصد زیاد شدند.» ۳) «۴۰ کارگاه رایگان برگزار شد.»
+قیدها: فقط از متن منبع استفاده کن. حدس نزن. اگر در منبع نیست بنویس «شواهد کافی نیست».
+قالب: جدول: ادعا | جمله‌ی منبع | برچسب (تأیید شد / رد شد / شواهد کافی نیست).
+###
+[متن گزارش ساختگی کتابخانه را اینجا بگذار]
+###</div></div>
+  <div class="callout warn step-in"><span class="lbl">⚠️ توجه:</span> برچسب ایجنت پیشنهاد است، نه حکم. انسان جمله‌ی منبع را باز می‌کند و حکم نهایی را می‌دهد.</div>
+</div>
+</section>
+
+<!-- ۱۰: گردش‌کار ۲: ترجمه -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🌐 گردش‌کار ۲</span>
+  <h2>ترجمه با واژه‌نامه<span class="en-sub">Translation With a Glossary</span></h2>
+  <div class="g2">
+    <div class="card warn step-in"><h3>❌ ترجمه‌ی ساده<span class="en-sub">Plain Translation</span></h3><p>اصطلاحات را کلمه‌به‌کلمه برمی‌گرداند و یک‌دست نیست؛ مثلاً Public Library گاهی «کتابخانه‌ی مردم» می‌شود.</p></div>
+    <div class="card good step-in"><h3>✅ سه‌مرحله‌ای<span class="en-sub">Three Steps</span></h3><ol><li>ترجمه‌ی دقیق</li><li>اعمال واژه‌نامه (Public Library = «کتابخانه‌ی عمومی»)</li><li>بازنویسی با لحن طبیعی</li></ol></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> واژه‌نامه‌ی پنج تا ده اصطلاح کلیدی را در دستور ثابت بگذار. ترجمه‌ی نهایی را فردی که زبان را می‌داند بازبینی کند.</div>
+</div>
+</section>
+
+<!-- ۱۱: گردش‌کار ۳: چند قالب -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🏭 گردش‌کار ۳</span>
+  <h2>یک محتوا، چند قالب<span class="en-sub">One Content, Several Formats</span></h2>
+  <table class="tbl">
+    <tr><th>بستر <span class="en">Channel</span></th><th>قالب</th><th>کار دستیار</th></tr>
+    <tr><td>وب‌سایت<br><span class="en">Website</span></td><td>مقاله با تیترهای فرعی</td><td>گزارش کامل حدود ۶۰۰ کلمه</td></tr>
+    <tr><td>پیام‌رسان<br><span class="en">Messaging</span></td><td>حداکثر ۲۵۰ کلمه، فهرست‌وار</td><td>پیام اصلی را کوتاه و روشن کند</td></tr>
+    <tr><td>شبکه‌ی اجتماعی کوتاه<br><span class="en">Short social post</span></td><td>رشته‌ی ۴ تا ۵ پستی</td><td>جمله‌ی اول دقیق و جذاب</td></tr>
+    <tr><td>متن صوتی<br><span class="en">Audio script</span></td><td>متن ۶۰ ثانیه‌ای</td><td>عدد را به گفتار ساده برگرداند</td></tr>
+  </table>
+  <div class="callout warn step-in"><span class="lbl">⚠️ توجه:</span> در همه‌ی قالب‌ها فکت‌ها باید یکی بمانند. پیش از انتشار چک‌لیست چهارموردی (فکت، لحن، واژه‌نامه، حریم خصوصی) را اجرا کن.</div>
+</div>
+</section>
+
+<!-- ۱۲: چرا چند ایجنت -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🤝 چند ایجنت</span>
+  <h2>کی چند ایجنت کمک می‌کند؟<span class="en-sub">When Do Multiple Agents Help?</span></h2>
+  <div class="g3">
+    <div class="card step-in"><span class="ic">🔍</span><h3>پژوهشگر<span class="en-sub">Researcher</span></h3><p>فقط جست‌وجو و استخراج فکت از منبع.</p></div>
+    <div class="card acc step-in"><span class="ic">✍️</span><h3>نویسنده<span class="en-sub">Writer</span></h3><p>از فکت‌ها پیش‌نویس روان می‌سازد.</p></div>
+    <div class="card good step-in"><span class="ic">🧐</span><h3>منتقد<span class="en-sub">Critic</span></h3><p>با بدبینی می‌خواند، فکت‌ها را چک می‌کند و ایراد برمی‌گرداند.</p></div>
+  </div>
+  <div class="callout warn step-in"><span class="lbl">⚠️ توجه:</span> هر ایجنت اضافه، یک گام اضافه برای آزمودن و یک جای تازه برای خطاست. فقط وقتی نقش‌ها واقعاً جدا هستند، چند ایجنت بساز.</div>
+</div>
+</section>
+
+<!-- ۱۳: الگوهای همکاری -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🕸️ الگوها</span>
+  <h2>سه الگوی همکاری<span class="en-sub">Three Collaboration Patterns</span></h2>
+  <div class="g3">
+    <div class="card step-in"><span class="ic">➡️</span><h3>زنجیره‌ای<span class="en-sub">Pipeline</span></h3><p>الف ← ب ← ج. مثال: استخراج ← ترجمه ← خلاصه.</p></div>
+    <div class="card acc step-in"><span class="ic">👔</span><h3>مدیر و کارکنان<span class="en-sub">Manager &amp; Workers</span></h3><p>یک ایجنت مدیر کار را تقسیم و نتیجه‌ها را جمع می‌کند.</p></div>
+    <div class="card good step-in"><span class="ic">⚔️</span><h3>مباحثه و نقد<span class="en-sub">Debate &amp; Critique</span></h3><p>دو ایجنت با دیدگاه مکمل، خطاهای هم را پیدا می‌کنند.</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 قاعده:</span> هر الگویی که انتخاب کنی، دروازه‌ی آخر انسان است.</div>
+</div>
+</section>
+
+<!-- ۱۴: نمایش: پژوهشگر + منتقد -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">👀 ببین</span>
+  <h2>نمایش: پژوهشگر + منتقد<span class="en-sub">Live Demo: Researcher + Critic</span></h2>
+  <div class="prompt good" data-label="ایجنت ۱ · پژوهشگر"><button type="button" class="copy">کپی</button><div class="pt">نقش: پژوهشگر. وظیفه: از متن منبع (گزارش ساختگی) فقط عددهای صریح را با جمله‌ی منبع استخراج کن. قید: حدس نزن؛ اگر نیست بنویس [در منبع نیامده]. قالب: جدول: عدد | جمله‌ی منبع.</div></div>
+  <div class="prompt good" data-label="ایجنت ۲ · منتقد"><button type="button" class="copy">کپی</button><div class="pt">نقش: منتقد سخت‌گیر. وظیفه: گزارش ایجنت ۱ را با منبع مقایسه کن. هر ادعای بدون جمله‌ی منبع مستقیم را با [اثبات‌نشده] علامت بزن و ایرادها را فهرست کن.</div></div>
+  <div class="callout tip step-in"><span class="lbl">🧍 انسان:</span> برچسب‌ها را مرور می‌کند و تأیید نهایی را می‌دهد. چه چیزی را منتقد گرفت که پژوهشگر نگرفته بود؟</div>
+</div>
+</section>
+
+<!-- ۱۵: اتوماسیون -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">⚙️ اتوماسیون</span>
+  <h2>اتوماسیون قطعی یا ایجنتی؟<span class="en-sub">Deterministic vs. Agentic Automation</span></h2>
+  <div class="g2">
+    <div class="card step-in"><h3>✅ قطعی<span class="en-sub">Deterministic</span></h3><p>قانون ساده: «اگر پیامی با این برچسب آمد، در جدول ذخیره کن.» همیشه یکسان و قابل‌پیش‌بینی.</p></div>
+    <div class="card warn step-in"><h3>🎲 ایجنتی<span class="en-sub">Agentic</span></h3><p>قضاوت: «پیام را بخوان و بگو فوری است یا نه.» قدرتمند، اما ممکن است اشتباه کند.</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> ابزارهای اتوماسیون بصری با کشیدن و رها کردن «گره»ها کار می‌کنند و کد نمی‌خواهند. نام و امکاناتشان تغییر می‌کند؛ مثل ماژول ۳، پیش از استفاده بیازمایشان.</div>
+</div>
+</section>
+
+<!-- ۱۶: ایستگاه تأیید -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🚦 ایستگاه تأیید</span>
+  <h2>هیچ اقدام حساسی بدون تأیید<span class="en-sub">No Sensitive Action Without Approval</span></h2>
+  <div class="flow">
+    <div class="node on step-in"><span class="ic">⚡</span><b>محرک</b><small class="en">Trigger</small><small>پیام یا فایل جدید.</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">🤖</span><b>گام ایجنتی</b><small class="en">Agent step</small><small>خلاصه یا پیش‌نویس.</small></div>
+    <div class="arr">←</div>
+    <div class="node warn step-in"><span class="ic">🧍</span><b>ایستگاه تأیید</b><small class="en">Approval station</small><small>انسان بررسی می‌کند.</small></div>
+    <div class="arr">←</div>
+    <div class="node ok step-in"><span class="ic">📤</span><b>اقدام</b><small class="en">Action</small><small>ارسال یا انتشار پس از تأیید.</small></div>
+  </div>
+  <div class="callout warn step-in"><span class="lbl">🛑 کلید توقف:</span> همیشه راهی داشته باش که گردش‌کار را فوراً متوقف کنی. <span class="en">(Kill switch)</span></div>
+</div>
+</section>
+
+<!-- ۱۷: آینده -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🔮 نگاهی به جلو</span>
+  <h2>ایجنت‌هایی که با رایانه کار می‌کنند<span class="en-sub">Computer-use Agents</span></h2>
+  <div class="g2">
+    <div class="card step-in"><h3>🖥️ چه می‌کنند<span class="en-sub">What They Do</span></h3><ul><li>صفحه را می‌بینند و کلیک می‌کنند</li><li>فرم پر می‌کنند و چند برنامه را به هم وصل می‌کنند</li><li>در حال پیشرفت‌اند و قابلیتشان در هر سرویس فرق می‌کند</li></ul></div>
+    <div class="card acc step-in"><h3>⚖️ فرصت و خطر<span class="en-sub">Opportunities &amp; Risks</span></h3><ul><li>فرصت: صرفه‌جویی در کارهای تکراری</li><li>خطر: خطای ناخواسته و اقدام روی حساب‌ها</li><li>مهارت پایدار: تفکر نقادانه و نظارت</li></ul></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نتیجه:</span> هرچه ایجنت‌ها توانمندتر شوند، اصول همین دوره (کمترین دسترسی، تأیید انسان، آزمون) مهم‌تر می‌شوند.</div>
+</div>
+</section>
+
+<!-- ۱۸: چهار سد -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🛡️ ممیزی نهایی</span>
+  <h2>چهار سد پیش از اجرا<span class="en-sub">Four Gates Before You Run</span></h2>
+  <table class="tbl">
+    <tr><th>حوزه <span class="en">Gate</span></th><th>پرسش</th><th>شرط قبولی</th></tr>
+    <tr><td>🔒 حریم خصوصی<br><span class="en">Privacy</span></td><td>داده‌ی هویتی یا محرمانه در دستور یا منبع هست؟</td><td>منبع پاک‌شده؛ تنظیمات داده بررسی شده</td></tr>
+    <tr><td>🔐 حساب و دسترسی<br><span class="en">Account &amp; Access</span></td><td>دسترسی‌ها حداقلی‌اند و حساب محکم است؟</td><td>فقط خواندن؛ لایه‌ی دوم روشن</td></tr>
+    <tr><td>🌫️ دقت<br><span class="en">Accuracy</span></td><td>به منبع استناد می‌دهد و «نمی‌دانم» می‌گوید؟</td><td>ده آزمون اجرا و ❌ها اصلاح شده</td></tr>
+    <tr><td>🧍 نظارت انسانی<br><span class="en">Human Oversight</span></td><td>ارسال، حذف و انتشار نیاز به تأیید دارد؟</td><td>ایستگاه تأیید و کلید توقف</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۱۹: برنامه‌ی ۳۰-۶۰-۹۰ -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🗓️ بعد از دوره</span>
+  <h2>برنامه‌ی ۳۰-۶۰-۹۰ روزه‌ی تو<span class="en-sub">Your 30-60-90 Day Plan</span></h2>
+  <table class="tbl">
+    <tr><th>زمان <span class="en">Time</span></th><th>اقدام</th><th>نشانه‌ی موفقیت</th></tr>
+    <tr><td>۳۰ روز اول<br><span class="en">Days 1–30</span></td><td>مدیر رمز، ورود دومرحله‌ای، مرور اپ‌های متصل، بررسی تنظیمات داده، تمرین روزانه‌ی درخواست پنج‌بخشی</td><td>حساب‌ها محکم و عادت درخواست خوب</td></tr>
+    <tr><td>۶۰ روز دوم<br><span class="en">Days 31–60</span></td><td>ساخت یک دستیار ساده با ده آزمون و شناسنامه</td><td>شناسنامه‌ی کامل و نتیجه‌ی آزمون</td></tr>
+    <tr><td>۹۰ روز سوم<br><span class="en">Days 61–90</span></td><td>یک گردش‌کار کوچک با ایستگاه تأیید؛ نوشتن قواعد استفاده از داده برای گروه</td><td>گردش‌کار پایدار و مستند</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۲۰: پروژه -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🎒 پروژه‌ی پایانی</span>
+  <h2>یک گردش‌کار کوچک زیر نظر انسان<span class="en-sub">A Small, Human-supervised Workflow</span></h2>
+  <div class="g4">
+    <div class="card center step-in"><span class="ic">1️⃣</span><h3>کار<span class="en-sub">Task</span></h3><p>یک کار کوچک و کم‌خطر.</p></div>
+    <div class="card center acc step-in"><span class="ic">2️⃣</span><h3>گام‌ها<span class="en-sub">Steps</span></h3><p>سه تا پنج گام و نقش هر گام.</p></div>
+    <div class="card center good step-in"><span class="ic">3️⃣</span><h3>ممیزی<span class="en-sub">Audit</span></h3><p>چهار سد و ده آزمون.</p></div>
+    <div class="card center warn step-in"><span class="ic">4️⃣</span><h3>انسان<span class="en-sub">Human</span></h3><p>ایستگاه تأیید و مسئول.</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> این تمرین طراحی و ممیزی است؛ ساختن کامل‌ش را می‌توانی در ۳۰-۶۰-۹۰ روز بعد ادامه بدهی.</div>
+</div>
+</section>
+
+<!-- ۲۱: تمرین ۱ -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">✍️ نوبت تو</span>
+  <h2>تمرین اول: کارت گردش‌کار<span class="en-sub">Exercise 1: The Workflow Card</span></h2>
+  <div class="try">
+    <div class="head">👥 تمرین دونفره <span class="en">Pair Exercise</span> <span class="time">۱۴ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>یک کار کوچک و کم‌خطر انتخاب کن (مثل راستی‌آزمایی یک متن عمومی یا آماده‌سازی چند قالب از یک خبر).</li>
+        <li>سه تا پنج گام بنویس و برای هرکدام «نقش»، «ورودی» و «خروجی» مشخص کن.</li>
+        <li>کنار هر گام بنویس: ایجنت، ابزار یا تأیید من.</li>
+        <li>مشخص کن ایستگاه تأیید کجاست.</li>
+      </ol>
+      <table class="tbl">
+        <tr><th>گام</th><th>نقش</th><th>ورودی ← خروجی</th><th>ایجنت / ابزار / تأیید من</th></tr>
+        <tr><td>۱</td><td>…</td><td>…</td><td>…</td></tr>
+      </table>
+      <div class="callout warn"><span class="lbl">🔒 یادت باشد:</span> فقط داده‌ی عمومی یا ساختگی.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۲: تمرین ۲ -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">✍️ نوبت تو</span>
+  <h2>تمرین دوم: ممیزی و ارائه<span class="en-sub">Exercise 2: Audit and Present</span></h2>
+  <div class="try">
+    <div class="head">👥 تمرین دونفره <span class="en">Pair Exercise</span> <span class="time">۸ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>کارت گردش‌کار را با چهار سد ممیزی کن: حریم خصوصی، حساب و دسترسی، دقت، نظارت انسانی.</li>
+        <li>ضعیف‌ترین سد را پیدا کن و یک اصلاح مشخص بنویس.</li>
+        <li>در یک دقیقه ارائه بده: کار، ایستگاه تأیید، سد ضعیف و اصلاحش.</li>
+      </ol>
+      <div class="callout tip"><span class="lbl">🔎 دنبال چه بگردیم؟</span> آیا هر گام آزمودنی است؟ آیا ایستگاه تأیید پیش از اقدام بیرونی است؟ آیا منبع پاک‌شده است؟</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۳: پنج اصل -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🌟 جمع‌بندی دوره</span>
+  <h2>پنج اصل طلایی<span class="en-sub">Five Guiding Principles</span></h2>
+  <table class="tbl">
+    <tr><th>اصل</th><th>یعنی چه؟</th></tr>
+    <tr><td>۱ · کمینه‌سازی داده<br><span class="en">Data Minimization</span></td><td>اطلاعات هویتی و محرمانه را وارد نکن؛ کمتر بده، پاک‌شده بده.</td></tr>
+    <tr><td>۲ · کمترین دسترسی<br><span class="en">Least Privilege</span></td><td>فقط خواندن؛ ارسال، حذف و انتشار خودکار نباشد.</td></tr>
+    <tr><td>۳ · درخواست دقیق<br><span class="en">Clear Prompts</span></td><td>نقش، زمینه، مأموریت، قیدها، قالب.</td></tr>
+    <tr><td>۴ · انسان در چرخه<br><span class="en">Human in the Loop</span></td><td>تصمیم نهایی و اقدام بیرونی با توست.</td></tr>
+    <tr><td>۵ · تفکر نقادانه<br><span class="en">Critical Thinking</span></td><td>روان بودن ≠ درست بودن؛ با منبع بسنج.</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۲۴: آزمون پایانی -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🎓 آزمون پایانی</span>
+  <h2>آیا به اهداف دوره رسیدیم؟<span class="en-sub">Course Final Check</span></h2>
+  <div class="g3">
+    <div class="quiz">
+      <div class="q">ایجنت چه فرقی با چت‌بات دارد؟</div>
+      <button class="opt" data-why="ایجنت ممکن است چند گام و ابزار داشته باشد؛ چت‌بات معمولاً یک پاسخ می‌دهد.">هیچ فرقی ندارد</button>
+      <button class="opt" data-correct="true" data-why="ایجنت برای یک هدف چند گام و ابزار را دنبال می‌کند؛ ولی بازبینی انسان همچنان لازم است.">ایجنت برای یک هدف چند گام و ابزار را دنبال می‌کند</button>
+      <button class="opt" data-why="ایجنت بودن به معنی همیشه درست یا مستقل بودن نیست.">ایجنت همیشه درست و مستقل است</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="quiz">
+      <div class="q">کدام اقدام باید حتماً از ایستگاه تأیید انسان عبور کند؟</div>
+      <button class="opt" data-why="پیش‌نویس اثر بیرونی ندارد.">نوشتن پیش‌نویس</button>
+      <button class="opt" data-correct="true" data-why="ارسال یا انتشار برگشت‌ناپذیر است و به بیرون اثر دارد.">ارسال یا انتشار عمومی</button>
+      <button class="opt" data-why="مرتب‌سازی معمولاً برگشت‌پذیر است.">مرتب‌کردن یادداشت‌ها</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="quiz">
+      <div class="q">پیش از اجرای یک گردش‌کار چه کنیم؟</div>
+      <button class="opt" data-why="بدون ممیزی ممکن است خطا یا نشت پیش بیاید.">مستقیم اجرا کنیم</button>
+      <button class="opt" data-correct="true" data-why="چهار سد: حریم خصوصی، حساب و دسترسی، دقت، نظارت انسانی.">با چهار سد ممیزی کنیم</button>
+      <button class="opt" data-why="تعداد ایجنت‌ها معیار کیفیت نیست.">تا می‌شود ایجنت بیشتری اضافه کنیم</button>
+      <div class="feedback"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۵: پایان -->
+<section class="slide">
+<div class="inner">
+  <span class="kicker">🎉 پایان دوره</span>
+  <h2>تعهد من برای کار با هوش مصنوعی<span class="en-sub">My Commitment for Working With AI</span></h2>
+  <ul class="check">
+    <li><span>از فردا یک کار کوچک را عوض می‌کنم؛ مثلاً پیش از فرستادن هر متن، نام‌ها را حذف می‌کنم. <span class="en">(One small change)</span></span></li>
+    <li><span>پیش از انتشار هر خروجی، عددها و منبع را با منبع اصلی تطبیق می‌دهم. <span class="en">(Check before publishing)</span></span></li>
+    <li><span>ورود دومرحله‌ای را روشن می‌کنم و اپ‌های متصل را مرور می‌کنم. <span class="en">(Secure my accounts)</span></span></li>
+    <li><span>کارهای حساس را با تأیید خودم انجام می‌دهم؛ تصمیم نهایی را به ماشین نمی‌سپارم. <span class="en">(Keep the human gate)</span></span></li>
+  </ul>
+  <div class="callout tip"><span class="lbl">🌱 یادآوری:</span> از ایجنت‌ها به‌عنوان دستیار فکر استفاده کن؛ تفکر نقادانه، اخلاق و نظارت را به ماشین نسپار.</div>
+  <div class="next-up"><span>🎓 <b>تبریک!</b> دوره‌ی «ایجنت‌های هوش مصنوعی و روش کار با آن‌ها» به پایان رسید. <span class="en">(Course complete)</span></span><a class="btn" href="index.html">بازگشت به فهرست ←</a></div>
+</div>
+</section>
+
+</main>
+<script src="deck.js"></script>
+</body>
+</html>

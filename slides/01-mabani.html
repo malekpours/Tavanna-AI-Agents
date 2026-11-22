@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ماژول ۱ — ایجنت هوش مصنوعی چیست؟</title>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body data-mod="1" data-title="ایجنت هوش مصنوعی چیست؟">
+<div id="progress"></div>
+<main class="deck">
+
+<!-- ۱: جلد -->
+<section class="slide cover" data-notes="به شرکت‌کنندگان خوش‌آمد بگویید (حدود ۸ دقیقه برای ورود). از چت Meet بخواهید بنویسند تا حالا با کدام چت‌بات کار کرده‌اند و برای چه کاری؛ لازم نیست اطلاعات شخصی بنویسند. هدف جلسه: بفهمیم ایجنت چیست، با چت‌بات چه فرقی دارد و کجا باید بازبینی کنیم.">
+<div class="inner">
+  <div class="hero">🤖</div>
+  <span class="kicker">ماژول ۱ از ۸</span>
+  <h1>ایجنت هوش مصنوعی چیست؟<span class="en-sub">What Is an AI Agent?</span></h1>
+  <p class="sub">از «جواب دادن» تا «کار انجام دادن» — قدم اول، از صفر و بدون پیش‌نیاز.</p>
+  <div class="chips"><span class="chip acc">⏱ حدود ۱۰۰ دقیقه</span><span class="chip">🛠️ بدون نیاز به کدنویسی</span><span class="chip">✍️ همراه با تمرین</span><span class="chip">🔒 فقط با داده‌ی عمومی یا ساختگی</span></div>
+  <p class="small mt">برای رفتن به اسلاید بعد: فلش چپ یا دکمه‌ی «بعدی»</p>
+</div>
+</section>
+
+<!-- ۲: هدف‌ها -->
+<section class="slide" data-notes="نقشه‌ی راه را نشان دهید. هدف‌ها را بخوانید و از شرکت‌کنندگان بخواهید در چت بنویسند کدام هدف برایشان مهم‌تر است.">
+<div class="inner">
+  <span class="kicker">🎯 مقصد</span>
+  <h2>آخر این ماژول می‌توانی…<span class="en-sub">By the End of This Module, You Can…</span></h2>
+  <div class="g3">
+    <div class="card center step-in"><span class="ic">🧩</span><h3>تفاوت را توضیح بدهی<span class="en-sub">Explain the Difference</span></h3><p>فرق «چت‌بات» و «ایجنت» را با یک مثال روزمره بگویی؛ بدون حفظ کردن تعریف.</p></div>
+    <div class="card center acc step-in"><span class="ic">⚙️</span><h3>اجزایش را بشناسی<span class="en-sub">Know the Components</span></h3><p>بدانی مدل، ورودی، ابزار و حافظه هرکدام چه نقشی دارند و چه ریسکی می‌آورند.</p></div>
+    <div class="card center good step-in"><span class="ic">🛡️</span><h3>هوشمندانه اعتماد کنی<span class="en-sub">Trust Wisely</span></h3><p>بدانی کجا خروجی را بررسی کنی، کجا خودت تصمیم بگیری و چه چیزی را اصلاً وارد نکنی.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ۳: برنامه -->
+<section class="slide" data-notes="زمان‌ها را اعلام کنید و تأکید کنید که برای تمرین و پرسش‌ها وقت داریم. مجموع زمان‌ها ۱۰۰ دقیقه است. اگر عقب افتادید، از مرور اجزا و نمایش کوتاه کنید؛ تمرین را حذف نکنید.">
+<div class="inner">
+  <span class="kicker">⏱ برنامه‌ی امروز</span>
+  <h2>با هم این مسیر را می‌رویم<span class="en-sub">Today’s Agenda</span></h2>
+  <table class="tbl">
+    <tr><th>بخش <span class="en">Section</span></th><th>چه می‌کنیم؟ <span class="en">Activity</span></th><th>زمان <span class="en">Time</span></th></tr>
+    <tr><td>ورود و پرسش آغازین<br><span class="en">Welcome &amp; Warm-up</span></td><td>آشنایی و تجربه‌های قبلی با چت‌بات</td><td>۸ دقیقه</td></tr>
+    <tr><td>داستان و واژه‌ها<br><span class="en">Story &amp; Key Terms</span></td><td>سارا، هوش مصنوعی، مدل زبانی، چت‌بات</td><td>۲۲ دقیقه</td></tr>
+    <tr><td>مقایسه و اجزا<br><span class="en">Comparison &amp; Components</span></td><td>چت‌بات در برابر ایجنت؛ مدل، ورودی، ابزار، حافظه؛ حلقه‌ی کار</td><td>۲۷ دقیقه</td></tr>
+    <tr><td>نمایش و تمرین<br><span class="en">Demo &amp; Practice</span></td><td>سطح استقلال، حریم خصوصی، نمایش مدرس و تمرین</td><td>۳۰ دقیقه</td></tr>
+    <tr><td>جمع‌بندی<br><span class="en">Wrap-up</span></td><td>آزمونک، نکته‌های کلیدی و تکلیف کوتاه</td><td>۱۳ دقیقه</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۴: داستان -->
+<section class="slide" data-notes="داستان را با صدای بلند بخوانید. از چت برای پاسخ‌های کوتاه استفاده کنید؛ لازم نیست کسی تجربه‌ی شخصی تعریف کند. سؤال بحث: کدام بخش را می‌شود سپرد و کدام تصمیم با خود سارا می‌ماند؟">
+<div class="inner">
+  <span class="kicker">📖 یک داستان</span>
+  <h2>سارا و برنامه‌ی یک رویداد<span class="en-sub">Sara and the Event Plan</span></h2>
+  <div class="story"><div class="avatar">👩</div><div class="bubble"><p>سارا مسئول برگزاری یک رویداد محله است. باید یک اطلاعیه‌ی عمومی را خلاصه کند، برای مخاطبان مختلف چند نسخه‌ی متفاوت بسازد، زمان‌ها را هماهنگ کند و در پایان پیام نهایی را برای همه بفرستد.</p></div></div>
+  <div class="g2">
+    <div class="card step-in"><span class="ic">💬</span><h3>با چت‌بات<span class="en-sub">With a Chatbot</span></h3><p>سارا می‌پرسد و چت‌بات <b>پیشنهاد می‌دهد</b>. کپی کردن، هماهنگی و ارسال را خود سارا انجام می‌دهد.</p></div>
+    <div class="card acc step-in"><span class="ic">🤖</span><h3>با ایجنت<span class="en-sub">With an Agent</span></h3><p>سارا هدف را می‌گوید. ایجنت <b>چند گام را پیش می‌برد</b> و پیش از اقدام مهم، نتیجه را برای تأیید نشان می‌دهد.</p></div>
+  </div>
+  <div class="callout step-in"><span class="lbl">💬 با هم فکر کنیم:</span> کدام بخش را می‌شود به دستیار سپرد و کدام تصمیم را باید خود سارا بگیرد؟</div>
+</div>
+</section>
+
+<!-- ۵: نقشه‌ی واژه‌ها -->
+<section class="slide" data-notes="این نقشه شبیه عروسک‌های تو در تو است. هر لایه بخشی از لایه‌ی بیرونی است. تأکید کنید که ایجنت معمولاً بر پایه‌ی مدل زبانی ساخته می‌شود، اما مرز واژه‌ها همیشه کاملاً جدا نیست.">
+<div class="inner">
+  <span class="kicker">🗺️ نقشه‌ی واژه‌ها</span>
+  <h2>این واژه‌ها چه ربطی به هم دارند؟<span class="en-sub">How Do These Terms Relate?</span></h2>
+  <div class="split">
+    <div class="svgbox">
+      <svg viewBox="0 0 400 300" role="img" aria-label="کادرهای تو در تو: هوش مصنوعی، یادگیری ماشین، مدل زبانی بزرگ، ایجنت">
+        <rect x="8" y="8" width="384" height="284" rx="24" fill="#3d5afe" fill-opacity=".08" stroke="#3d5afe" stroke-width="2"/>
+        <rect x="40" y="62" width="320" height="222" rx="22" fill="#8a4fff" fill-opacity=".1" stroke="#8a4fff" stroke-width="2"/>
+        <rect x="72" y="116" width="256" height="160" rx="20" fill="#0e9f8e" fill-opacity=".12" stroke="#0e9f8e" stroke-width="2"/>
+        <rect x="108" y="172" width="184" height="92" rx="18" fill="#e67700" fill-opacity=".16" stroke="#e67700" stroke-width="2"/>
+        <text x="200" y="38" text-anchor="middle" font-size="17" font-weight="700">هوش مصنوعی (AI)</text>
+        <text x="200" y="92" text-anchor="middle" font-size="16" font-weight="700">یادگیری ماشین</text>
+        <text x="200" y="146" text-anchor="middle" font-size="16" font-weight="700">مدل زبانی بزرگ (LLM)</text>
+        <text x="200" y="224" text-anchor="middle" font-size="18" font-weight="700">ایجنت 🤖</text>
+      </svg>
+    </div>
+    <div>
+      <ul class="keys">
+        <li><span><b>AI <span class="en">(Artificial Intelligence)</span>:</b> هر سامانه‌ای که کاری شبیه تصمیم‌گیری یا درک انجام دهد.</span></li>
+        <li><span><b>یادگیری ماشین <span class="en">(Machine Learning)</span>:</b> یاد گرفتن الگو از مثال‌ها، نه از دستور قدم‌به‌قدم.</span></li>
+        <li><span><b>LLM <span class="en">(Large Language Model)</span>:</b> مدلی که روی حجم عظیمی متن آموزش دیده است.</span></li>
+        <li><span><b>ایجنت <span class="en">(Agent)</span>:</b> معمولاً یک LLM همراه با هدف، گام‌ها و گاهی ابزار.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> مرز این واژه‌ها همیشه کاملاً جدا نیست؛ قابلیت واقعی هر ابزار به طراحی همان ابزار بستگی دارد.</div>
+</div>
+</section>
+
+<!-- ۶: LLM -->
+<section class="slide" data-notes="مثال تکمیل خودکار گوشی را بزنید. LLM را «مغز» بنامید تا در اسلایدهای بعد به اجزا وصل شود. تأکید کنید که روان بودن جواب یعنی درست بودن آن نیست.">
+<div class="inner">
+  <span class="kicker">🧠 مغز ایجنت</span>
+  <h2>LLM یعنی «مدل زبانی بزرگ»<span class="en-sub">LLM = Large Language Model</span></h2>
+  <div class="split">
+    <div>
+      <p class="lead">مثل تکمیل خودکار <span class="en">(Autocomplete)</span> کیبورد گوشی، اما <b>بسیار توانمندتر</b>.</p>
+      <p>متن را می‌خواند و بر پایه‌ی الگوهایی که یاد گرفته، ادامه‌ی محتمل را می‌سازد. با همین روش می‌تواند بنویسد، ترجمه کند، خلاصه کند و توضیح بدهد.</p>
+      <div class="callout warn"><span class="lbl">⚠️ توجه:</span> «می‌فهمد» به معنای انسانی نیست. الگوها را خوب یاد گرفته و گاهی با لحنی مطمئن اشتباه می‌کند.</div>
+    </div>
+    <div class="chat">
+      <div class="ttl">کیبورد هوشمند</div>
+      <div class="msg user">امروز هوا خیلی …</div>
+      <div class="msg bot"><span class="who">حدس مدل</span>سرد است / گرم است / خوب است</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۷: چت‌بات -->
+<section class="slide" data-notes="محدودیت اصلی چت‌بات معمولی: فقط در همین پنجره حرف می‌زند. اشاره کنید بعضی چت‌بات‌ها خودشان ابزار هم دارند؛ پس مرز همیشه دقیق نیست.">
+<div class="inner">
+  <span class="kicker">💬 چت‌بات</span>
+  <h2>چت‌بات: یک مشاور باهوش پشت شیشه<span class="en-sub">Chatbot: A Smart Advisor Behind Glass</span></h2>
+  <div class="split">
+    <div>
+      <p class="lead">می‌شنود و جواب می‌دهد، اما <b>معمولاً نمی‌تواند دست دراز کند</b>.</p>
+      <ul>
+        <li>در پنجره‌ی گفت‌وگو کار می‌کند</li>
+        <li>هر بار منتظر دستور تو می‌ماند</li>
+        <li>خودش چیزی را باز، ارسال یا ذخیره نمی‌کند</li>
+      </ul>
+      <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> چت‌بات «محیط گفت‌وگو» است؛ بعضی چت‌بات‌ها پشت صحنه ابزار هم دارند. پس به قابلیت واقعی هر سرویس نگاه کن، نه به اسمش.</div>
+    </div>
+    <div class="chat">
+      <div class="ttl">چت‌بات معمولی</div>
+      <div class="msg user"><span class="who">سارا</span>برای رویداد محله چه برنامه‌ای پیشنهاد می‌دهی؟</div>
+      <div class="msg bot"><span class="who">چت‌بات</span>چند گزینه: بازارچه، کارگاه کودک، نمایش کوتاه… قیمت، ظرفیت و مجوز را خودت باید بررسی کنی.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۸: ایجنت -->
+<section class="slide" data-notes="تعریف ایجنت: هدف + گام‌ها + ابزار + کنترل انسان. تأکید کنید که ایجنت بودن یعنی چندمرحله‌ای بودن؛ نه حتماً مستقل بودن و نه حتماً درست بودن.">
+<div class="inner">
+  <span class="kicker">🤖 ایجنت</span>
+  <h2>ایجنت: دستیاری که دست و پا دارد<span class="en-sub">Agent: An Assistant With Hands</span></h2>
+  <p class="lead">ایجنت هوش مصنوعی سامانه‌ای است که <b>برای رسیدن به یک هدف</b> چند گام برمی‌دارد و گاهی <b>از ابزارها استفاده می‌کند</b>.</p>
+  <div class="g3">
+    <div class="card center step-in"><span class="ic">🎯</span><h3>هدف می‌گیرد<span class="en-sub">Takes a Goal</span></h3><p>نه فقط یک پرسش؛ مثلاً «برنامه‌ی رویداد را آماده کن».</p></div>
+    <div class="card center acc step-in"><span class="ic">🪜</span><h3>مرحله‌بندی می‌کند<span class="en-sub">Plans in Steps</span></h3><p>کار را به گام‌های کوچک‌تر تقسیم می‌کند.</p></div>
+    <div class="card center good step-in"><span class="ic">🛠️</span><h3>ابزار به کار می‌برد<span class="en-sub">Uses Tools</span></h3><p>جست‌وجو، خواندن فایل، تقویم و…؛ هرچه آن سرویس اجازه بدهد.</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">💡 نکته:</span> «ایجنت» یعنی سامانه‌ای چندمرحله‌ای؛ نه اینکه حتماً مستقل باشد یا همیشه درست کار کند.</div>
+</div>
+</section>
+
+<!-- ۹: مقایسه -->
+<section class="slide" data-notes="جدول را کامل بخوانید. از شرکت‌کنندگان بخواهید یک مثال دیگر برای ردیف آخر بسازند.">
+<div class="inner">
+  <span class="kicker">⚖️ مقایسه</span>
+  <h2>چت‌بات در برابر ایجنت<span class="en-sub">Chatbot vs. Agent</span></h2>
+  <table class="tbl">
+    <tr><th></th><th>💬 چت‌بات<br><span class="en">Chatbot</span></th><th>🤖 ایجنت<br><span class="en">Agent</span></th></tr>
+    <tr><td>کار اصلی<br><span class="en">Main job</span></td><td>جواب می‌دهد یا پیش‌نویس می‌سازد</td><td>کار را چندمرحله‌ای پیش می‌برد</td></tr>
+    <tr><td>ورودی<br><span class="en">Input</span></td><td>یک پرسش</td><td>یک هدف</td></tr>
+    <tr><td>مراحل<br><span class="en">Steps</span></td><td>معمولاً یک قدم</td><td>چند قدم پشت هم</td></tr>
+    <tr><td>ابزار<br><span class="en">Tools</span></td><td>معمولاً ندارد یا محدود است</td><td>اغلب دارد</td></tr>
+    <tr><td>نقش تو<br><span class="en">Your role</span></td><td>اجرا و بررسی بیشتر با توست</td><td>تعیین هدف، مرز و تأیید نهایی</td></tr>
+    <tr><td>مثال<br><span class="en">Example</span></td><td>«یک رویداد چطور برنامه‌ریزی می‌شود؟»</td><td>«برنامه را بچین و پیش‌نویس اطلاعیه را آماده کن»</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ۱۰: یک درخواست، دو پاسخ -->
+<section class="slide" data-notes="همان درخواست را دو بار ببینید و تفاوت خروجی را نشان دهید. به پیام آخر ایجنت دقت کنید: پیش از اقدام بیرونی تأیید می‌خواهد.">
+<div class="inner">
+  <span class="kicker">👀 ببین</span>
+  <h2>یک درخواست، دو پاسخ<span class="en-sub">One Request, Two Responses</span></h2>
+  <p>درخواست: <b>«یک جلسه‌ی مطالعه‌ی گروهی برای پنجشنبه ترتیب بده.»</b></p>
+  <div class="g2">
+    <div class="chat step-in">
+      <div class="ttl">💬 چت‌بات <span class="en">Chatbot</span></div>
+      <div class="msg bot">پنجشنبه بعدازظهر خوب است. می‌توانی به دوستانت پیام بدهی و زمان را هماهنگ کنی. این هم متن پیشنهادی…</div>
+    </div>
+    <div class="chat step-in">
+      <div class="ttl">🤖 ایجنت <span class="en">Agent</span></div>
+      <div class="msg think">💭 باید زمان آزاد همه را ببینم.</div>
+      <div class="msg tool">🛠️ تقویم‌ها را بررسی کرد</div>
+      <div class="msg tool">🛠️ پیشنهاد «۱۶ تا ۱۸» را آماده کرد</div>
+      <div class="msg bot">پیش‌نویس دعوت‌نامه آماده است. قبل از ارسال، تأیید می‌کنی؟</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۱۱: چهار جزء -->
+<section class="slide" data-notes="بدن انسان را مقایسه کنید: مغز، چشم و گوش، دست، یادداشت. یادآوری کنید همه‌ی ایجنت‌ها این اجزا را یکسان ندارند؛ مجوز و نگهداری اطلاعات در هر سرویس فرق می‌کند.">
+<div class="inner">
+  <span class="kicker">⚙️ اجزا</span>
+  <h2>یک ایجنت از چه چیزهایی استفاده می‌کند؟<span class="en-sub">What Does an Agent Use?</span></h2>
+  <div class="g4">
+    <div class="card center step-in"><span class="ic">🧠</span><h3>مدل<span class="en-sub">Model</span></h3><p>متن را می‌خواند و گام یا پاسخ پیشنهاد می‌کند.</p></div>
+    <div class="card center acc step-in"><span class="ic">👀</span><h3>ورودی<span class="en-sub">Input</span></h3><p>دستور تو، فایل‌ها یا نتیجه‌ی ابزار.</p></div>
+    <div class="card center good step-in"><span class="ic">🛠️</span><h3>ابزار<span class="en-sub">Tools</span></h3><p>جست‌وجو، ماشین‌حساب، خواندن فایل یا قابلیتی دیگر.</p></div>
+    <div class="card center warn step-in"><span class="ic">🗂️</span><h3>حافظه<span class="en-sub">Memory</span></h3><p>ممکن است بخشی از گفت‌وگو یا اطلاعات را نگه دارد.</p></div>
+  </div>
+  <div class="callout step-in"><span class="lbl">🧍 تشبیه:</span> مدل = فکر کردن · ورودی = چشم و گوش · ابزار = دست · حافظه = یادداشت‌ها<br><span class="en">Model = thinking · Input = eyes &amp; ears · Tools = hands · Memory = notes</span></div>
+  <div class="callout warn step-in"><span class="lbl">🔒 به یاد داشته باش:</span> همه‌ی ایجنت‌ها این اجزا را یکسان ندارند؛ مجوزها و نگهداری اطلاعات در هر سرویس فرق می‌کند. هر ابزار یا حافظه می‌تواند به اطلاعات تو دسترسی پیدا کند؛ پیش از استفاده بدان چه چیزی می‌بیند و کجا نگه داشته می‌شود.</div>
+</div>
+</section>
+
+<!-- ۱۲: حلقه -->
+<section class="slide" data-notes="حلقه‌ی فکر-عمل-مشاهده-بررسی را روی تخته یا Jamboard بکشید. نام فنی ReAct یعنی Reason + Act؛ حفظ کردن آن لازم نیست.">
+<div class="inner">
+  <span class="kicker">🔁 چطور کار می‌کند</span>
+  <h2>ایجنت در یک حلقه کار می‌کند<span class="en-sub">The Agent Loop</span></h2>
+  <div class="flow">
+    <div class="node on step-in"><span class="ic">💭</span><b>فکر</b><small class="en">Think</small><small>چه کنم؟</small></div>
+    <div class="arr">←</div>
+    <div class="node warn step-in"><span class="ic">🛠️</span><b>عمل</b><small class="en">Act</small><small>ابزار را اجرا کن</small></div>
+    <div class="arr">←</div>
+    <div class="node ok step-in"><span class="ic">👁️</span><b>مشاهده</b><small class="en">Observe</small><small>نتیجه چه شد؟</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">✅</span><b>بررسی</b><small class="en">Check</small><small>تمام شد یا ادامه؟</small></div>
+  </div>
+  <p class="center">اگر کار تمام نشده بود، دوباره از «فکر» شروع می‌شود. نام فنی‌اش <span class="en">ReAct (Reason + Act)</span> است.</p>
+  <div class="callout warn step-in"><span class="lbl">🛑 مکث:</span> اگر یکی از این مرحله‌ها خطا کند، مرحله‌های بعدی هم روی همان خطا ساخته می‌شوند. برای همین نقطه‌ی توقف مهم است.</div>
+</div>
+</section>
+
+<!-- ۱۳: حلقه در عمل -->
+<section class="slide" data-notes="هر پیام را یک مرحله از حلقه نشان دهید. بپرسید: اگر ابزار داده‌ی غلط می‌داد، پاسخ آخر چه می‌شد؟">
+<div class="inner">
+  <span class="kicker">🔍 حلقه در عمل</span>
+  <h2>وقتی می‌پرسی «فردا چتر لازم است؟»<span class="en-sub">The Loop in Action</span></h2>
+  <div class="chat">
+    <div class="msg user"><span class="who">تو</span>فردا برای رفت‌وآمد چتر ببرم؟</div>
+    <div class="msg think">💭 <b>فکر <span class="en">(Think)</span>:</b> باید پیش‌بینی هوای فردای شهر را ببینم.</div>
+    <div class="msg tool">🛠️ <b>عمل <span class="en">(Act)</span>:</b> ابزار پیش‌بینی هوا را صدا زد</div>
+    <div class="msg tool">👁️ <b>مشاهده <span class="en">(Observe)</span>:</b> ۸۰٪ احتمال باران از ساعت ۷</div>
+    <div class="msg think">💭 <b>فکر <span class="en">(Think)</span>:</b> داده کافی است؛ جواب بده.</div>
+    <div class="msg bot"><span class="who">ایجنت</span>بله، چتر ببر. بر اساس پیش‌بینی، صبح احتمال باران زیاد است.</div>
+  </div>
+</div>
+</section>
+
+<!-- ۱۴: نقشه‌ی کار سارا -->
+<section class="slide" data-notes="هر گام را یکی‌یکی آشکار کنید. بپرسید اگر مرحله‌ی «اقدام» خطا کند چه اثری دارد و چرا بازبینی انسان در آخر کافی نیست اگر خطا زودتر رخ داده باشد.">
+<div class="inner">
+  <span class="kicker">🗺️ نقشه‌ی کار</span>
+  <h2>کار سارا را مرحله‌به‌مرحله ببین<span class="en-sub">Sara’s Task, Step by Step</span></h2>
+  <div class="flow">
+    <div class="node on step-in"><span class="ic">🎯</span><b>هدف</b><small class="en">Goal</small><small>اطلاعیه برای سه مخاطب</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">🧠</span><b>برنامه</b><small class="en">Plan</small><small>خلاصه، سه نسخه، بازبینی</small></div>
+    <div class="arr">←</div>
+    <div class="node warn step-in"><span class="ic">🛠️</span><b>اقدام</b><small class="en">Act</small><small>ساخت پیش‌نویس‌ها</small></div>
+    <div class="arr">←</div>
+    <div class="node step-in"><span class="ic">👀</span><b>مشاهده</b><small class="en">Observe</small><small>مقایسه با متن اصلی</small></div>
+    <div class="arr">←</div>
+    <div class="node ok step-in"><span class="ic">🧍</span><b>بازبینی انسان</b><small class="en">Human Review</small><small>تأیید پیش از ارسال</small></div>
+  </div>
+  <div class="callout warn"><span class="lbl">🛑 مکث:</span> پیش از ارسال، انتشار، حذف یا هر تصمیم مهم، تأیید انسان را نگه دار.</div>
+</div>
+</section>
+
+<!-- ۱۵: نردبان -->
+<section class="slide" data-notes="هر پله یعنی انسان کنترل کمتری دارد. درباره‌ی ریسک هر پله بحث کنید و از شرکت‌کنندگان بخواهید برای هر سطح یک مثال بگویند.">
+<div class="inner">
+  <span class="kicker">🪜 چقدر آزاد؟</span>
+  <h2>چهار سطح استقلال<span class="en-sub">Four Levels of Autonomy</span></h2>
+  <div class="ladder">
+    <div class="rung r1"><h3>۱ · پیشنهاد<span class="en-sub">Level 1 · Suggest</span></h3><p>فقط ایده می‌دهد؛ تو تصمیم می‌گیری.</p></div>
+    <div class="rung r2"><h3>۲ · با اجازه<span class="en-sub">Level 2 · Ask Permission</span></h3><p>کار را آماده می‌کند؛ اجرا با تأیید توست.</p></div>
+    <div class="rung r3"><h3>۳ · با نظارت<span class="en-sub">Level 3 · Supervised</span></h3><p>خودش اجرا می‌کند؛ تو گزارش را می‌بینی و می‌توانی متوقفش کنی.</p></div>
+    <div class="rung r4"><h3>۴ · مستقل<span class="en-sub">Level 4 · Autonomous</span></h3><p>همه‌چیز بدون تأیید پیش می‌رود؛ ریسک بالاست.</p></div>
+  </div>
+  <div class="callout tip"><span class="lbl">✅ قاعده برای شروع:</span> از سطح ۱ و ۲ شروع کن و فقط برای کارهای کم‌خطر و قابل‌برگشت جلوتر برو.</div>
+</div>
+</section>
+
+<!-- ۱۶: انسان در حلقه -->
+<section class="slide" data-notes="مثال: ارسال پیام به دیگران یا پرداخت پول همیشه تأیید انسان می‌خواهد. معیار ساده: آیا اگر اشتباه شود می‌شود برگرداند؟">
+<div class="inner">
+  <span class="kicker">🧑‍⚖️ کنترل با توست</span>
+  <h2>کارهای مهم را خودت تأیید کن<span class="en-sub">Approve the Important Things Yourself</span></h2>
+  <div class="g2">
+    <div class="card good step-in"><h3>✅ می‌شود به ایجنت سپرد<span class="en-sub">Safe to Delegate</span></h3><ul><li>خلاصه‌کردن یک متن عمومی</li><li>جمع‌آوری و دسته‌بندی منابع</li><li>پیش‌نویس ایمیل یا اطلاعیه</li></ul></div>
+    <div class="card bad step-in"><h3>🛑 بدون تأیید تو نه<span class="en-sub">Never Without Your Approval</span></h3><ul><li>ارسال پیام به دیگران</li><li>پرداخت یا ثبت سفارش</li><li>حذف یا انتشار فایل</li></ul></div>
+  </div>
+  <p class="center mt"><b>«انسان در حلقه»</b> یعنی پیش از هر کار حساس یا برگشت‌ناپذیر، یک انسان تأیید کند. <span class="small">(<span class="en">Human-in-the-loop</span>)</span></p>
+</div>
+</section>
+
+<!-- ۱۷: خطاها -->
+<section class="slide" data-notes="توهم را با یک مثال نشان دهید: منبع یا عددی که در متن اصلی وجود ندارد. تأکید کنید که لحن مطمئن نشانه‌ی درستی نیست.">
+<div class="inner">
+  <span class="kicker">⚠️ بدانیم</span>
+  <h2>ایجنت‌ها هم اشتباه می‌کنند<span class="en-sub">Agents Make Mistakes Too</span></h2>
+  <div class="g3">
+    <div class="card warn step-in"><span class="ic">🌫️</span><h3>توهم<span class="en-sub">Hallucination</span></h3><p>گاهی با اطمینان چیزی می‌گوید که درست نیست یا در منبع وجود ندارد.</p></div>
+    <div class="card warn step-in"><span class="ic">🔄</span><h3>بدفهمی<span class="en-sub">Misunderstanding</span></h3><p>اگر هدف مبهم باشد، چیز دیگری را انجام می‌دهد؛ مثلاً «خلاصه کن» را به «کوتاه کن» تعبیر می‌کند.</p></div>
+    <div class="card warn step-in"><span class="ic">🧪</span><h3>خطای ابزار<span class="en-sub">Tool Error</span></h3><p>ابزار ممکن است داده‌ی قدیمی یا غلط بدهد و ایجنت همان را بپذیرد.</p></div>
+  </div>
+  <div class="callout tip step-in"><span class="lbl">🔎 عادت خوب:</span> هر عدد، نام یا ادعای مهم را با متن اصلی یا یک منبع دیگر تطبیق بده.</div>
+</div>
+</section>
+
+<!-- ۱۸: حریم خصوصی -->
+<section class="slide" data-notes="این اسلاید پایه‌ی ماژول ۴ است. تأکید کنید در همه‌ی تمرین‌های دوره فقط داده‌ی عمومی یا ساختگی به کار می‌رود. اگر کسی پرسید فلان سرویس داده را نگه می‌دارد یا نه، پاسخ قطعی ندهید؛ بگویید باید سیاست همان سرویس بررسی شود.">
+<div class="inner">
+  <span class="kicker">🔒 پیش از نوشتن</span>
+  <h2>چه چیزی را به دستیار می‌دهی؟<span class="en-sub">Privacy: What Should You Share With an Assistant?</span></h2>
+  <div class="g2">
+    <div class="card good step-in"><h3>✅ مناسب تمرین<span class="en-sub">Safe for Practice</span></h3><ul><li>متن عمومی، مثل یک اطلاعیه‌ی منتشرشده</li><li>داده‌ی ساختگی با نام‌های خیالی</li><li>سؤال‌های عمومی و آموزشی</li></ul></div>
+    <div class="card bad step-in"><h3>🛑 وارد نکن<span class="en-sub">Do Not Enter</span></h3><ul><li>رمز عبور، کد پیامکی یا اطلاعات بانکی</li><li>مشخصات دیگران یا اسناد شخصی</li><li>اطلاعات محرمانه‌ی کار یا سازمان</li></ul></div>
+  </div>
+  <div class="callout step-in"><span class="lbl">💡 قاعده‌ی ساده:</span> اگر نمی‌خواهی متن را روی یک تابلوی عمومی ببینی، آن را وارد نکن. اینکه هر سرویس اطلاعات را چطور نگه می‌دارد، در ماژول ۴ بررسی می‌شود.</div>
+</div>
+</section>
+
+<!-- ۱۹: نمایش مدرس -->
+<section class="slide" data-notes="۱۰ تا ۱۵ دقیقه. ابزار را تا مرحله‌ی پیش‌نویس نگه دارید. اگر اینترنت یا سرویس در دسترس نیست، همان متن و خروجی نمونه را روی صفحه تحلیل کنید. هر بار از شرکت‌کنندگان بخواهید حدس بزنند کجا ممکن است خطا باشد.">
+<div class="inner">
+  <span class="kicker">👀 ببین</span>
+  <h2>نمایش عملی؛ نوبت توست که بررسی کنی<span class="en-sub">Live Demo: Your Turn to Check</span></h2>
+  <div class="try">
+    <div class="head">🧑‍🏫 نمایش مدرس <span class="en">Instructor Demo</span> <span class="time">۱۰ تا ۱۵ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>یک متن عمومی یا ساختگی را روی صفحه نشان بده.</li>
+        <li>از دستیار سه نکته‌ی اصلی بخواه.</li>
+        <li>هر نکته را با متن اصلی بسنج.</li>
+        <li>درخواست کن عدد یا نامی را که در منبع نیست نسازد؛ سپس دوباره بررسی کن.</li>
+      </ol>
+      <div class="callout tip"><span class="lbl">🔎 دنبال چه بگردیم؟ <span class="en">What to look for</span></span> آیا هر نکته به جمله‌ای از منبع وصل است؟ آیا چیزی حدس زده شده؟ آیا لحن مطمئن بوده اما دلیلی نداشته؟</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۱۹-الف: متن منبع -->
+<section class="slide" data-notes="این متن ساختگی است و عمداً چند عدد و اطلاعات مشخص دارد تا بتوان پاسخ هوش مصنوعی را با آن سنجید. متن را روی صفحه نشان دهید و از شرکت‌کنندگان بخواهید عددها و تاریخ را یادداشت کنند؛ بعداً به آن‌ها نیاز دارند.">
+<div class="inner">
+  <span class="kicker">🧪 مثال عملی: راستی‌آزمایی <span class="en">Fact-checking</span></span>
+  <h2>مرحله‌ی اول: متن منبع<span class="en-sub">Step 1: The Source Text</span></h2>
+  <div class="card">
+    <h3>گزارش فعالیت یک کتابخانه‌ی عمومی در سال ۲۰۲۵<span class="en-sub">Public Library Activity Report, 2025</span></h3>
+    <p>کتابخانه‌ی مرکزی شهر در سال ۲۰۲۵ خدمات خود را به <b>۱۲ هزار</b> عضو ارائه کرده است. این کتابخانه در طول سال <b>۸۵ هزار</b> جلد کتاب و مجله به امانت داده است.</p>
+    <p>تعداد اعضای کتابخانه نسبت به سال قبل افزایش داشته است. همچنین کتابخانه در این سال <b>۴۰</b> کارگاه آموزشی رایگان در زمینه‌ی مهارت‌های دیجیتال، سواد رسانه‌ای و استفاده از اینترنت برگزار کرده است.</p>
+    <p>بیشترین استقبال از کارگاه‌های سواد رسانه‌ای بوده است. کتابخانه اعلام کرده که قصد دارد در سال ۲۰۲۶ تعداد کارگاه‌های آموزشی خود را افزایش دهد.</p>
+    <p>این گزارش در تاریخ <b>۱۵ ژانویه ۲۰۲۶</b> منتشر شده است.</p>
+  </div>
+  <div class="callout tip"><span class="lbl">🔒 یادآوری:</span> این یک متن ساختگی برای تمرین است. نکته‌ی مهم: <b>در متن هیچ درصدی نیامده است</b>.</div>
+</div>
+</section>
+
+<!-- ۱۹-ب: درخواست سه نکته -->
+<section class="slide" data-notes="پرامپت را به دستیار بدهید و پاسخ را روی صفحه نشان دهید. اگر سرویس در دسترس نیست، از جدول اسلاید بعد به‌عنوان پاسخ نمونه استفاده کنید. تأکید کنید که از دستیار «نقل جمله‌ی منبع» خواسته‌ایم تا بررسی ممکن شود.">
+<div class="inner">
+  <span class="kicker">🧪 مثال عملی: راستی‌آزمایی <span class="en">Fact-checking</span></span>
+  <h2>مرحله‌ی دوم: از دستیار سه نکته‌ی اصلی بخواه<span class="en-sub">Step 2: Ask for Three Key Points</span></h2>
+  <p>این پرامپت <span class="en">(Prompt)</span> را به دستیار بده:</p>
+  <div class="prompt good" data-label="پرامپت ۱ · درخواست خلاصه با نقل از منبع"><button type="button" class="copy">کپی</button><div class="pt">متن بالا را بررسی کن و سه نکته‌ی اصلی و مهم آن را به زبان ساده خلاصه کن.
+برای هر نکته، جمله یا بخشی از متن اصلی را که آن را تأیید می‌کند نیز نقل کن.</div></div>
+  <div class="callout step-in"><span class="lbl">💡 چرا «نقل از منبع»؟</span> وقتی هر نکته به جمله‌ای از متن وصل باشد، بررسی آن آسان‌تر می‌شود. <span class="en">(Source grounding)</span></div>
+</div>
+</section>
+
+<!-- ۱۹-ج: بررسی پاسخ -->
+<section class="slide" data-notes="فرض کنید دستیار این پاسخ را داده است. از شرکت‌کنندگان بخواهید پیش از نمایش ستون وضعیت، خودشان حدس بزنند کدام نکته قابل اعتماد نیست. سپس ردیف سوم را با متن مقایسه کنید: هیچ درصدی در منبع نیامده است.">
+<div class="inner">
+  <span class="kicker">🧪 مثال عملی: راستی‌آزمایی <span class="en">Fact-checking</span></span>
+  <h2>مرحله‌ی سوم: پاسخ را با متن اصلی بسنج<span class="en-sub">Step 3: Compare the Answer With the Source</span></h2>
+  <p>فرض کن دستیار چنین پاسخی داده است:</p>
+  <table class="tbl">
+    <tr><th>ادعای دستیار <span class="en">Claim</span></th><th>وضعیت <span class="en">Status</span></th><th>دلیل <span class="en">Reason</span></th></tr>
+    <tr><td>کتابخانه ۱۲ هزار عضو داشته است.</td><td>✅ درست<br><span class="en">Supported</span></td><td>مستقیماً در متن آمده است.</td></tr>
+    <tr><td>کتابخانه ۸۵ هزار کتاب و مجله به امانت داده است.</td><td>✅ درست<br><span class="en">Supported</span></td><td>مستقیماً در متن آمده است.</td></tr>
+    <tr><td>تعداد اعضا ۳۰ درصد افزایش یافته است.</td><td>🛑 ساختگی<br><span class="en">Fabricated</span></td><td>هیچ درصدی در متن ذکر نشده است؛ فقط «افزایش» آمده است.</td></tr>
+  </table>
+  <div class="callout warn step-in"><span class="lbl">💬 با هم فکر کنیم:</span> کدام پاسخ قابل اعتماد نیست و چرا؟</div>
+</div>
+</section>
+
+<!-- ۱۹-د: جلوگیری از ساختن اطلاعات -->
+<section class="slide" data-notes="پرامپت دوم را بدهید. دقت کنید که چهار قاعده‌ی روشن دارد: فقط منبع، بدون حدس، اعلام اطلاعات ناموجود، و نقل جمله‌ی پشتیبان. پاسخ جدید را با متن منبع دوباره بسنجید؛ ممکن است هنوز خطا باشد.">
+<div class="inner">
+  <span class="kicker">🧪 مثال عملی: راستی‌آزمایی <span class="en">Fact-checking</span></span>
+  <h2>مرحله‌ی چهارم: جلوی ساختن اطلاعات را بگیر<span class="en-sub">Step 4: Preventing Hallucination</span></h2>
+  <p>حالا این پرامپت اصلاحی را بده:</p>
+  <div class="prompt good" data-label="پرامپت ۲ · اصلاح و محدود کردن به منبع"><button type="button" class="copy">کپی</button><div class="pt">پاسخ قبلی خود را دوباره بررسی کن.
+فقط از اطلاعاتی استفاده کن که به‌صورت صریح در متن منبع وجود دارند.
+هیچ عدد، درصد، نام، تاریخ یا اطلاعات تکمیلی را حدس نزن یا از خودت نساز.
+اگر اطلاعاتی در متن وجود ندارد، صریحاً بگو که در منبع ذکر نشده است.
+حالا سه نکته‌ی اصلی را دوباره ارائه بده و برای هرکدام جمله‌ی پشتیبان از متن اصلی را مشخص کن.</div></div>
+  <div class="callout warn step-in"><span class="lbl">🔎 باز هم بسنج:</span> پاسخ جدید را دوباره با متن اصلی مقایسه کن. دستور اصلاح به معنی تضمین درستی نیست.</div>
+</div>
+</section>
+
+<!-- ۱۹-ه: دنبال چه بگردیم -->
+<section class="slide" data-notes="چهار معیار را یکی‌یکی نشان دهید و برای هرکدام از شرکت‌کنندگان بخواهید نمونه‌اش را در همین تمرین پیدا کنند.">
+<div class="inner">
+  <span class="kicker">🔎 دنبال چه بگردیم؟ <span class="en">What to look for</span></span>
+  <h2>چهار پرسش برای بررسی پاسخ<span class="en-sub">Four Questions for Checking an Answer</span></h2>
+  <div class="g2">
+    <div class="card step-in"><h3>۱ · پیوند به منبع<span class="en-sub">Source grounding</span></h3><p>آیا هر ادعا به جمله‌ی مشخصی از متن اصلی وصل است؟</p></div>
+    <div class="card warn step-in"><h3>۲ · توهم<span class="en-sub">Hallucination</span></h3><p>آیا عدد، درصد، نام یا اطلاعاتی ساخته شده که در منبع نیست؟</p></div>
+    <div class="card acc step-in"><h3>۳ · اطمینان در برابر شواهد<span class="en-sub">Confidence vs. Evidence</span></h3><p>آیا پاسخ با اطمینان بیان شده، در حالی که شواهد کافی ندارد؟</p></div>
+    <div class="card good step-in"><h3>۴ · اصلاح<span class="en-sub">Correction</span></h3><p>پس از دستور اصلاح، آیا دستیار خطا را شناسایی و درست کرده است؟</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ۱۹-و: پیام اصلی -->
+<section class="slide" data-notes="سؤال را در چت یا شفاهی بپرسید و چند پاسخ بگیرید. پاسخ‌های مورد انتظار: تطبیق با منبع، پرسیدن «این را از کدام جمله فهمیدی؟»، بررسی عددها، و استفاده از منبع دوم. سپس پیام اصلی را بخوانید.">
+<div class="inner">
+  <span class="kicker">💡 پیام اصلی</span>
+  <h2>روان بودن یعنی درست بودن؟<span class="en-sub">Does Fluent Mean Correct?</span></h2>
+  <div class="callout warn"><span class="lbl">💬 سؤال برای بحث:</span> اگر دستیار یک عدد اشتباه را با اطمینان کامل بگوید، از کجا می‌فهمیم که اشتباه است؟</div>
+  <div class="card acc step-in"><span class="ic">🧭</span><h3>پیام اصلی این تمرین<span class="en-sub">The Takeaway</span></h3><p>هوش مصنوعی ممکن است پاسخ‌هایی بسیار روان، منطقی و قانع‌کننده بسازد؛ اما <b>روان بودن پاسخ به معنی درست بودن آن نیست</b>. ادعاهای آن را باید با منبع اصلی مقایسه و راستی‌آزمایی کرد.</p></div>
+</div>
+</section>
+
+<!-- ۲۰: تمرین -->
+<section class="slide" data-notes="۱۵ تا ۲۰ دقیقه. در Google Meet از اتاق‌های جانبی دو نفره یا چت استفاده کنید. اگر اینترنت قطع است، تمرین را با کاغذ ادامه دهید. در پایان چند پاسخ را مرور کنید.">
+<div class="inner">
+  <span class="kicker">✍️ نوبت تو</span>
+  <h2>چت‌بات یا ایجنت؟<span class="en-sub">Chatbot or Agent?</span></h2>
+  <div class="try">
+    <div class="head">👥 تمرین فردی یا دونفره <span class="en">Solo or Pair Exercise</span> <span class="time">۱۵ تا ۲۰ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>برای هر موقعیت بنویس: چت‌بات یا ایجنت؟ چرا؟</li>
+        <li>اگر ایجنت بود، بنویس چه ابزاری لازم دارد.</li>
+        <li>یک مثال از کار روزمره‌ی خودت اضافه کن؛ با داده‌ی عمومی یا ساختگی.</li>
+        <li>یک نقطه‌ی توقف <span class="en">(Checkpoint)</span> پیش از ارسال یا انتشار تعیین کن.</li>
+      </ol>
+      <table class="tbl">
+        <tr><th>موقعیت <span class="en">Situation</span></th><th>چت‌بات / ایجنت؟ <span class="en">Chatbot / Agent?</span></th></tr>
+        <tr><td>پرسیدن «فتوسنتز چیست؟»</td><td>…</td></tr>
+        <tr><td>جست‌وجوی منابع، نوشتن گزارش و ذخیره در فایل</td><td>…</td></tr>
+        <tr><td>پیدا کردن یک شعر کوتاه برای تبریک تولد</td><td>…</td></tr>
+        <tr><td>مرتب‌کردن تقویم هفته و فرستادن یادآوری</td><td>…</td></tr>
+      </table>
+      <div class="callout warn"><span class="lbl">🔒 یادت باشد:</span> اطلاعات واقعی و حساس را وارد نکن.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۰-ب: تمرین دوم -->
+<section class="slide" data-notes="حدود ۱۰ دقیقه، فردی. این تمرین مقدمه‌ی تکلیف پایانی است. اول نمونه‌ی جدول را نشان دهید، سپس هر نفر کار خودش را انتخاب کند. فقط کار کم‌خطر با داده‌ی عمومی یا ساختگی. اگر وقت کم بود، آن را به‌عنوان تکلیف بدهید و در شروع ماژول ۲ چند نمونه را مرور کنید.">
+<div class="inner">
+  <span class="kicker">✍️ نوبت تو</span>
+  <h2>تمرین دوم: برچسب‌گذاری گام‌ها<span class="en-sub">Exercise 2: Labeling the Steps</span></h2>
+  <div class="try">
+    <div class="head">📝 تمرین فردی <span class="en">Individual Exercise</span> <span class="time">۱۰ دقیقه</span></div>
+    <div class="body">
+      <ol class="steps">
+        <li>یک کار روزمره‌ی کم‌خطر انتخاب کن؛ مثلاً برنامه‌ریزی یک دورهمی.</li>
+        <li>کار را به پنج گام کوچک تقسیم کن.</li>
+        <li>کنار هر گام بنویس «پیشنهاد»، «ابزار» یا «تأیید من».</li>
+        <li>مشخص کن توقف اصلی کجاست؛ یعنی پیش از کدام گام باید خودت تصمیم بگیری.</li>
+      </ol>
+      <table class="tbl">
+        <tr><th>نمونه: برنامه‌ریزی یک دورهمی <span class="en">Example</span></th><th>برچسب <span class="en">Label</span></th></tr>
+        <tr><td>پیشنهاد چند زمان مناسب</td><td>پیشنهاد<br><span class="en">Suggest</span></td></tr>
+        <tr><td>بررسی تقویم‌ها</td><td>ابزار<br><span class="en">Tool</span></td></tr>
+        <tr><td>نوشتن پیش‌نویس دعوت‌نامه</td><td>پیشنهاد<br><span class="en">Suggest</span></td></tr>
+        <tr><td>ارسال دعوت‌نامه به گروه</td><td>تأیید من 🛑<br><span class="en">My approval</span></td></tr>
+      </table>
+      <div class="callout warn"><span class="lbl">🔒 یادت باشد:</span> از کار ساختگی یا عمومی استفاده کن؛ اطلاعات واقعی و حساس را وارد نکن.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۱: آزمونک -->
+<section class="slide" data-notes="ابتدا فرصت پاسخ بدهید؛ بعد از انتخاب هر گزینه، دلیل را بخوانید و بحث را باز کنید. پاسخ اشتباه را بد نشان ندهید؛ می‌توان دوباره تلاش کرد.">
+<div class="inner">
+  <span class="kicker">🧪 خودت را بسنج</span>
+  <h2>سه سؤال سریع<span class="en-sub">Three Quick Questions</span></h2>
+  <div class="g3">
+    <div class="quiz">
+      <div class="q">کدام گزینه بهتر یک ایجنت را توصیف می‌کند؟</div>
+      <button class="opt" data-why="این بیشتر یک پاسخ گفت‌وگویی است.">یک پاسخ کوتاه به معنی یک واژه</button>
+      <button class="opt" data-correct="true" data-why="هدف، چند گام و احتمال استفاده از ابزار.">سامانه‌ای که برای یک هدف چند گام و ابزار را دنبال می‌کند</button>
+      <button class="opt" data-why="نصب‌شدن به‌تنهایی برنامه را ایجنت نمی‌کند.">هر برنامه‌ای که روی رایانه نصب شده</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="quiz">
+      <div class="q">پیش از کدام کار تأیید تو لازم است؟</div>
+      <button class="opt" data-why="پیشنهاد، پیش‌نویس است و اثر بیرونی ندارد.">پیشنهاد چند عنوان</button>
+      <button class="opt" data-correct="true" data-why="ارسال روی دیگران اثر دارد و برگشت‌پذیر نیست.">ارسال پیام به گروه</button>
+      <button class="opt" data-why="خلاصه هم باید بررسی شود، اما ارسال اقدامی بیرونی است.">خلاصه‌کردن متن عمومی</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="quiz">
+      <div class="q">ایجنتی با لحن مطمئن عددی گفته. چه کار می‌کنی؟</div>
+      <button class="opt" data-why="لحن مطمئن نشانه‌ی درستی نیست.">چون مطمئن حرف زده، می‌پذیرم</button>
+      <button class="opt" data-correct="true" data-why="تطبیق با منبع، عادت اصلی در برابر توهم است.">عدد را با منبع اصلی تطبیق می‌دهم</button>
+      <button class="opt" data-why="نگرانی لازم است؛ اما راهش بررسی است، نه دور ریختن همه‌چیز.">کل خروجی را بی‌بررسی کنار می‌گذارم</button>
+      <div class="feedback"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ۲۲: جمع‌بندی -->
+<section class="slide" data-notes="هر نکته را با یک جمله از شرکت‌کنندگان تکرار کنید. از آن‌ها بخواهید یک نکته‌ی به‌یادماندنی و یک پرسش باز را در چت بنویسند. به ماژول ۲ وصل کنید: چطور خوب درخواست بنویسیم.">
+<div class="inner">
+  <span class="kicker">📌 جمع‌بندی</span>
+  <h2>چه یاد گرفتیم؟<span class="en-sub">What Did We Learn?</span></h2>
+  <ul class="keys">
+    <li><span>چت‌بات معمولاً <b>گفت‌وگو می‌کند</b>؛ ایجنت ممکن است <b>کار را چندمرحله‌ای پیش ببرد</b>. <span class="en">(Chatbot vs. Agent)</span></span></li>
+    <li><span>مدل، ورودی، ابزار و حافظه اجزای رایج‌اند؛ <b>ترکیب و مجوزها در هر سرویس فرق می‌کند</b>. <span class="en">(Model · Input · Tools · Memory)</span></span></li>
+    <li><span>ایجنت در حلقه‌ی <b>فکر ← عمل ← مشاهده ← بررسی</b> کار می‌کند. <span class="en">(Think → Act → Observe → Check)</span></span></li>
+    <li><span>هرچه استقلالش بیشتر باشد، <b>نظارت تو</b> مهم‌تر است. <span class="en">(Human Oversight)</span></span></li>
+    <li><span>پاسخ روان لزوماً درست نیست؛ <b>کار مهم را خودت بازبینی کن</b> و اطلاعات حساس را وارد نکن. <span class="en">(Review · Privacy)</span></span></li>
+  </ul>
+  <div class="next-up"><span>🚀 <b>تکلیف کوتاه</b> <span class="en">(Mini Assignment)</span><b>:</b> یک کار کم‌خطر انتخاب کن و پنج گامش را بنویس. کنار گام‌هایی که نیاز به تأیید تو دارند علامت بزن. در ماژول ۲ یاد می‌گیریم چطور درخواست خوب بنویسیم.</span><a class="btn" href="02-karborda.html">ماژول ۲ ←</a></div>
+</div>
+</section>
+
+</main>
+<script src="deck.js"></script>
+</body>
+</html>
