@@ -77,8 +77,8 @@
 
 ## اجرای آنلاین در Google Meet
 
-- هر جلسه یک مجموعه‌ی HTML قابل اشتراک‌گذاری در [slides](/D:/tavanna2/tavaana/tavaana/slides) دارد.
-- [راهنمای Google Meet](/D:/tavanna2/tavaana/tavaana/handouts/google-meet-guide.md) تنظیمات، نقش همیار، استفاده از چت و برنامه‌ی قطع اینترنت را توضیح می‌دهد.
+- هر جلسه یک مجموعه‌ی HTML قابل اشتراک‌گذاری در [slides](slides/) دارد.
+- [راهنمای Google Meet](handouts/google-meet-guide.md) تنظیمات، نقش همیار، استفاده از چت و برنامه‌ی قطع اینترنت را توضیح می‌دهد.
 - فشردن فلش‌های راست/چپ یا کلیدهای Space و PageDown اسلایدها را تغییر می‌دهد.
 - کلید P حالت یادداشت مدرس و کلید Esc نمای فهرست اسلایدها را فعال می‌کند.
 
